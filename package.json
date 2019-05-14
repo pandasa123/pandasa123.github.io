@@ -1,0 +1,23 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "Sanket Panda Portfolio",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "next build && next export -o docs"
+  },
+  "author": "Sanket Panda",
+  "license": "MIT",
+  "dependencies": {
+    "@zeit/next-sass": "latest",
+    "bulma": "latest",
+    "bulma-switch": "^2.0.0",
+    "next": "latest",
+    "node-sass": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-reveal": "^1.2.2"
+  }
+}
