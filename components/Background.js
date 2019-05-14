@@ -10,7 +10,7 @@ const Background = props => {
             <div className="columns is-1">
               <div className="column is-hidden-mobile"/>
               <div className="column is-3-tablet">
-                <span className="has-text-link title is-size-5 text-right-until-mobile">BACKGROUND</span>
+                <span className="has-text-info title is-size-5 text-right-until-mobile">BACKGROUND</span>
               </div>
               <div className="column is-5">
                 <p className="subtitle is-size-6">I'm an award-winning <span

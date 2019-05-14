@@ -10,7 +10,7 @@ const Skills = props => {
             <div className="columns is-mobile is-1">
               <div className="column is-1 is-hidden-mobile"/>
               <div className="column is-3">
-                <p className="has-text-link title is-size-5 skills">SKILLS</p>
+                <p className="has-text-info title is-size-5 skills">SKILLS</p>
               </div>
               <div className="column is-1 is-hidden-mobile"/>
               <div className="column is-2">
@@ -63,7 +63,6 @@ const Skills = props => {
                 <br/>
                 <span>CI / CD</span>
               </div>
-              {/*<div className="column is-2-widescreen is-hidden-mobile"/>*/}
             </div>
           </div>
         </div>

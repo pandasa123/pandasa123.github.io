@@ -45,23 +45,40 @@ body {
 
 .skills {
   @media only screen and (min-width: 769px) {
-    //min-width: 265px;
     padding-left: 61%;
   }
-
-
   @media only screen and (max-width: 813px) {
     padding-left: 50%;
   }
-
   @media only screen and (max-width: 768px) {
     padding-left: 0%;
   }
 }
 
-.columnHide {
-  @media only screen and (max-width: 769px) {
-    display: none;
+.experience {
+  @media only screen and (min-width: 769px) {
+    padding-left: 42%;
+  }
+  @media only screen and (max-width: 1471px) {
+    padding-left: 40%;
+  }
+  @media only screen and (max-width: 1279px) {
+    padding-left: 34%;
+  }
+  @media only screen and (max-width: 891px) {
+    padding-left: 30%;
+  }
+  @media only screen and (max-width: 845px) {
+    padding-left: 27%;
+  }
+  @media only screen and (max-width: 817px) {
+    padding-left: 24%;
+  }
+  @media only screen and (max-width: 785px) {
+    padding-left: 14%;
+  }
+  @media only screen and (max-width: 768px) {
+    padding-left: 0%;
   }
 }
 
