@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import Background from '../components/Background'
 import Skills from '../components/Skills'
 import Experience from '../components/Experience'
+import ViewportHeader from '../components/ViewportHeader'
 
 // TODO: Add favicon
 
@@ -17,16 +18,13 @@ const toggleTheme = (newTheme) => {
 
 class Index extends React.Component {
   componentDidMount() {
-    if (theme === true) {
-      document.querySelector('html').style.backgroundColor = 'hsl(0, 0%, 21%)'
-    } else {
-      document.querySelector('html').style.backgroundColor = 'white'
-    }
+    document.querySelector('html').style.backgroundColor = (theme === true) ? 'hsl(0, 0%, 21%)' : 'white'
   }
 
   render() {
     return (
       <div>
+        <ViewportHeader/>
         <Header toggle={toggleTheme} theme={theme}/>
         <Hello theme={theme}/>
         <Background theme={theme}/>

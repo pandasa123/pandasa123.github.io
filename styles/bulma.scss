@@ -74,7 +74,7 @@ body {
   @media only screen and (max-width: 817px) {
     padding-left: 24%;
   }
-  @media only screen and (max-width: 785px) {
+  @media only screen and (max-width: 787px) {
     padding-left: 14%;
   }
   @media only screen and (max-width: 768px) {
@@ -89,6 +89,9 @@ body {
 }
 
 .dark-footer {
-  background-color: $dark;
+  background-color: $dark !important;
   color: white;
+  strong {
+    color: white;
+  }
 }

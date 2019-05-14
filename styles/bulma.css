@@ -9165,7 +9165,7 @@ body {
     padding-left: 24%;
   }
 }
-@media only screen and (max-width: 785px) {
+@media only screen and (max-width: 787px) {
   .experience {
     padding-left: 14%;
   }
@@ -9183,7 +9183,10 @@ body {
 }
 
 .dark-footer {
-  background-color: #363636;
+  background-color: #363636 !important;
+  color: white;
+}
+.dark-footer strong {
   color: white;
 }
 

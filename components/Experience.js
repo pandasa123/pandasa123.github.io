@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade'
 const Experience = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
-      <Fade delayIn="800" distance="200px">
+      <Fade delayIn="800" distance="50px">
         <div className="hero-body">
           <div className="container">
             <div className="columns is-mobile is-1">

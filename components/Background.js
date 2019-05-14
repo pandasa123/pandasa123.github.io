@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade'
 const Background = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
-      <Fade delayIn="800" distance="200px">
+      <Fade delayIn="800" distance="50px">
         <div className="hero-body">
           <div className="container">
             <div className="columns is-1">
@@ -13,7 +13,7 @@ const Background = props => {
                 <span className="has-text-info title is-size-5 text-right-until-mobile">BACKGROUND</span>
               </div>
               <div className="column is-5">
-                <p className="subtitle is-size-6">I'm an award-winning <span
+                <p className="is-size-6">I'm an award-winning <span
                   className="shadow is-danger">fullstack</span> developer at <strong>IBM Extreme
                   Blue</strong>.
                   I'm also a senior studying Computer Science Engineering at the <strong>University of Michigan: Ann

@@ -6,11 +6,17 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "prod": "npm run build && npm start",
     "deploy": "next build && next export -o docs"
   },
   "author": "Sanket Panda",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@zeit/next-sass": "latest",
     "bulma": "latest",
     "bulma-switch": "^2.0.0",
@@ -19,5 +25,6 @@
     "react": "latest",
     "react-dom": "latest",
     "react-reveal": "^1.2.2"
-  }
+  },
+  "devDependencies": {}
 }
