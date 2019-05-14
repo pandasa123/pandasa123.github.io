@@ -13,7 +13,7 @@ const Skills = props => {
                 <p className="has-text-link title is-size-5">SKILLS</p>
               </div>
               <div className="column web">
-                <strong>FRONTEND</strong>
+                <strong className="shadow is-success">FRONTEND</strong>
                 <br/><br/>
                 <span>JavaScript</span>
                 <br/>
@@ -28,7 +28,7 @@ const Skills = props => {
                 <span>ML.js</span>
               </div>
               <div className="column">
-                <strong>BACKEND</strong>
+                <strong className="shadow is-danger">BACKEND</strong>
                 <br/><br/>
                 <span>Node.js</span>
                 <br/>
@@ -47,7 +47,7 @@ const Skills = props => {
                 <span>MongoDB</span>
               </div>
               <div className="column">
-                <strong>CLOUD</strong>
+                <strong className="shadow is-info">CLOUD</strong>
                 <br/>
                 <br/>
                 <span>AWS</span>

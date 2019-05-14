@@ -13,12 +13,15 @@ const Background = props => {
                 <p className="has-text-link title is-size-5">BACKGROUND</p>
               </div>
               <div className="column is-4">
-                <p className="subtitle is-size-6">I'm an award-winning fullstack developer at <strong>IBM Extreme
+                <p className="subtitle is-size-6">I'm an award-winning <span
+                  className="shadow is-danger">fullstack</span> developer at <strong>IBM Extreme
                   Blue</strong>.
                   I'm also a senior studying Computer Science Engineering at the <strong>University of Michigan: Ann
                     Arbor</strong>
                   <br/><br/>
-                  I love building cool, meaningful applications that leverage a variety of web and cloud technologies
+                  I love building cool, meaningful applications that leverage a variety of <span
+                    className="shadow is-success">web</span> and <span
+                    className="shadow is-info">cloud</span> technologies
                 </p>
               </div>
               <div className="column"/>

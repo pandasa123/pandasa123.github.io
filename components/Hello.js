@@ -24,11 +24,11 @@ const Hello = props => {
         <div className="container">
           <h1 className="subtitle is-1">Hey there! 👋</h1>
           <h2 className="subtitle is-size-3" style={{maxWidth: '800px', paddingTop: '5%'}}>My name is <strong>Sanket
-            Panda</strong>! I'm a
-            fullstack developer interested in beautiful, scalable
-            applications built in the cloud! ☁️</h2>
+            Panda</strong>! I'm a&nbsp;
+            <span className="shadow is-danger">fullstack</span> developer interested in <span className="shadow is-success">beautiful</span>, scalable
+            applications built in the <span className="shadow is-info">cloud</span>! ☁️</h2>
           <h3 className="subtitle is-size-3" style={{maxWidth: '800px', paddingTop: '20%'}}>
-            <span className="shadow">Find out more about me!</span>👇
+            Find out more about me!👇
           </h3>
         </div>
       </div>
