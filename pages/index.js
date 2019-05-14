@@ -11,7 +11,7 @@ import ViewportHeader from '../components/ViewportHeader'
 
 // TODO: Add favicon
 
-let theme = false
+let theme = true
 const toggleTheme = (newTheme) => {
   theme = !newTheme
 }

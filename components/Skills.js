@@ -4,15 +4,15 @@ import Fade from 'react-reveal/Fade'
 const Skills = props => {
   return (
     <section className={props.theme ? 'hero is-small is-dark' : 'hero is-small'}>
-      <Fade delayIn="800" distance="50px">
+      <Fade delayIn="800" distance="0px">
         <div className="hero-body">
           <div className="container">
-            <div className="columns is-mobile is-1">
-              <div className="column is-1 is-hidden-mobile"/>
-              <div className="column is-3">
-                <p className="has-text-info title is-size-5 skills">SKILLS</p>
+            <div className="columns is-mobile is-1 is-size-5">
+              <div className="column is-2 is-hidden-mobile"/>
+              <div className="column is-2">
+                <span className="has-text-info title is-size-4">MY SKILLS</span>
               </div>
-              <div className="column is-1 is-hidden-mobile"/>
+              {/*<div className="column is-1 is-hidden-mobile"/>*/}
               <div className="column is-2">
                 <strong className="shadow is-success">FRONTEND</strong>
                 <br/><br/>

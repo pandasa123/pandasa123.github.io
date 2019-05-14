@@ -6,15 +6,15 @@ import Fade from 'react-reveal/Fade'
 const Experience = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
-      <Fade delayIn="800" distance="50px">
+      <Fade delayIn="800" distance="0px">
         <div className="hero-body">
           <div className="container">
-            <div className="columns is-mobile is-1">
-              <div className="column is-1 is-hidden-mobile"/>
-              <div className="column is-3">
-                <span className="has-text-info title is-size-5 experience">EXPERIENCE</span>
+            <div className="columns is-mobile is-size-5">
+              <div className="column is-2 is-hidden-mobile"/>
+              <div className="column is-2">
+                <span className="has-text-info title is-size-4">WHERE I'VE WORKED</span>
               </div>
-              <div className="column is-1 is-hidden-mobile"/>
+              {/*<div className="column is-1 is-hidden-mobile"/>*/}
 
               {/* Companies */}
               <div className="column">

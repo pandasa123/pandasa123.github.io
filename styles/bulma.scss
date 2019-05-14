@@ -43,45 +43,6 @@ body {
   }
 }
 
-.skills {
-  @media only screen and (min-width: 769px) {
-    padding-left: 61%;
-  }
-  @media only screen and (max-width: 813px) {
-    padding-left: 50%;
-  }
-  @media only screen and (max-width: 768px) {
-    padding-left: 0%;
-  }
-}
-
-.experience {
-  @media only screen and (min-width: 769px) {
-    padding-left: 42%;
-  }
-  @media only screen and (max-width: 1471px) {
-    padding-left: 40%;
-  }
-  @media only screen and (max-width: 1279px) {
-    padding-left: 34%;
-  }
-  @media only screen and (max-width: 891px) {
-    padding-left: 30%;
-  }
-  @media only screen and (max-width: 845px) {
-    padding-left: 27%;
-  }
-  @media only screen and (max-width: 817px) {
-    padding-left: 24%;
-  }
-  @media only screen and (max-width: 787px) {
-    padding-left: 14%;
-  }
-  @media only screen and (max-width: 768px) {
-    padding-left: 0%;
-  }
-}
-
 .text-right-until-mobile {
   @media only screen and (min-width: 769px) {
     text-align: right;
