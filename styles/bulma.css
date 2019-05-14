@@ -9120,14 +9120,30 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
-  .web {
-    margin-left: -4%;
+  .skills {
+    padding-left: 61%;
+  }
+}
+@media only screen and (max-width: 813px) {
+  .skills {
+    padding-left: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skills {
+    padding-left: 0%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .columnHide {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .text-right-until-mobile {
+    text-align: right;
   }
 }
 

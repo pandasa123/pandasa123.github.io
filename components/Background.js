@@ -7,12 +7,12 @@ const Background = props => {
       <Fade delayIn="800" distance="200px">
         <div className="hero-body">
           <div className="container">
-            <div className="columns is-centered">
-              <div className="column is-3"/>
-              <div className="column">
-                <p className="has-text-link title is-size-5">BACKGROUND</p>
+            <div className="columns is-1">
+              <div className="column is-hidden-mobile"/>
+              <div className="column is-3-tablet">
+                <span className="has-text-link title is-size-5 text-right-until-mobile">BACKGROUND</span>
               </div>
-              <div className="column is-4">
+              <div className="column is-5">
                 <p className="subtitle is-size-6">I'm an award-winning <span
                   className="shadow is-danger">fullstack</span> developer at <strong>IBM Extreme
                   Blue</strong>.

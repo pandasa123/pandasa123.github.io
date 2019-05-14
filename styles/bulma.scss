@@ -43,15 +43,31 @@ body {
   }
 }
 
-.web {
+.skills {
   @media only screen and (min-width: 769px) {
-    margin-left: -4%;
+    //min-width: 265px;
+    padding-left: 61%;
+  }
+
+
+  @media only screen and (max-width: 813px) {
+    padding-left: 50%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding-left: 0%;
   }
 }
 
 .columnHide {
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 769px) {
     display: none;
+  }
+}
+
+.text-right-until-mobile {
+  @media only screen and (min-width: 769px) {
+    text-align: right;
   }
 }
 
