@@ -66,10 +66,10 @@ body {
   }
 }
 
-.iconSet {
+.badgeSet {
   display: inline-block;
   position: relative;
-  bottom: 0.2rem;
+  pointer-events: none;
 }
 
 .emoji {
