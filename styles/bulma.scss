@@ -66,24 +66,16 @@ body {
   }
 }
 
-//.check {
-//  padding-top: 1px;
-//
-//  &.blueCheck {
-//    color: $info;
-//  }
-//
-//  &.greenCheck {
-//    color: $success;
-//  }
-//
-//  &.redCheck {
-//    color: $danger;
-//  }
-//}
-
 .iconSet {
   position: relative;
   top: 0.2rem;
   display: inline-block;
+}
+
+.emoji {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: relative;
+  top: 5px;
 }

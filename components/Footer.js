@@ -12,7 +12,15 @@ const Footer = props => {
       <div className="container">
         <div className="columns">
           <div className="column has-text-centered-mobile">
-            <strong>Designed & Developed by Sanket Panda ✌️</strong>
+            <strong>Designed & Developed by Sanket Panda <img className="emoji"
+                                                              src="../static/victory-hand.png"
+                                                              draggable={false}
+                                                              style={{
+                                                                height: '1.4rem',
+                                                                position: 'relative',
+                                                                bottom: '10px',
+                                                              }}
+                                                              alt="victory emoji"/>️</strong>
           </div>
           <div className="column is-hidden-mobile"/>
           <div className="column has-text-centered-mobile has-text-right">

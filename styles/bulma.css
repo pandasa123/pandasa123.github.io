@@ -9145,4 +9145,12 @@ body {
   display: inline-block;
 }
 
+.emoji {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: relative;
+  top: 5px;
+}
+
 /*# sourceMappingURL=bulma.css.map */
