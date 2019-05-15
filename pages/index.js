@@ -11,7 +11,11 @@ import ViewportHeader from '../components/ViewportHeader'
 
 // TODO: Add favicon
 
-let theme = true
+let hour = new Date().getHours()
+let theme = false
+if (hour > 19 || hour < 8) {
+  theme = true
+}
 const toggleTheme = (newTheme) => {
   theme = !newTheme
 }

@@ -9132,5 +9132,11 @@ body {
 .dark-footer strong {
   color: white;
 }
+.dark-footer .icon {
+  color: #209cee;
+}
+.dark-footer .icon:hover {
+  color: white;
+}
 
 /*# sourceMappingURL=bulma.css.map */

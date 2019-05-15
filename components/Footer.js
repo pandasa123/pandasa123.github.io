@@ -3,8 +3,6 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faFacebookSquare, faGithub, faLinkedin} from '@fortawesome/fontawesome-free-brands'
 import {faEnvelope} from '@fortawesome/fontawesome-free-solid'
 
-// TODO: Add peace sign
-
 const footerStyle = {backgroundColor: 'white', paddingBottom: '30px'}
 const Footer = props => {
   return (

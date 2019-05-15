@@ -52,7 +52,16 @@ body {
 .dark-footer {
   background-color: $dark !important;
   color: white;
+
   strong {
+    color: white;
+  }
+
+  .icon {
+    color: $info;
+  }
+
+  .icon:hover {
     color: white;
   }
 }
