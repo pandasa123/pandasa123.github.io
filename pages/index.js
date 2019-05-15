@@ -9,8 +9,6 @@ import Skills from '../components/Skills'
 import Experience from '../components/Experience'
 import ViewportHeader from '../components/ViewportHeader'
 
-// TODO: Add favicon
-
 const Index = () => {
   const [useDarkMode, setDarkMode] = useState(false)
   useEffect(() => {

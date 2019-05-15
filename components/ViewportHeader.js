@@ -10,6 +10,7 @@ const ViewPortHeader = () => {
         content="initial-scale=1.0, width=device-width, minimum-scale=1.0"
         key="viewport"
       />
+      <link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon"/>
     </Head>
   )
 }

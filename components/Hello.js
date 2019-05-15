@@ -8,7 +8,8 @@ const Hello = props => {
       className={props.theme ? 'hero is-fullheight-with-navbar is-dark' : 'hero is-fullheight-with-navbar'}>
       <div className="hero-body">
         <div className="container">
-          <h1 className="subtitle is-1">Hey there! <img className="emoji waving-hand animated" src="../static/waving-hand.png"
+          <h1 className="subtitle is-1">Hey there! <img className="emoji waving-hand animated"
+                                                        src="../static/waving-hand.png"
                                                         draggable={false} style={{height: '3rem'}}
                                                         alt="waving hand emoji"/></h1>
           <h2 className="subtitle is-size-3" style={{maxWidth: '800px', paddingTop: '5%'}}>My name is <strong>Sanket
