@@ -1,13 +1,10 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 
-
-// TODO: Add accordion experience
-// TODO: Maybe use levels instead? Mobile view broken
 const Experience = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
-      <Fade delayIn="800" distance="0px">
+      <Fade delayIn="800" duration={1200} distance="0px">
         <div className="hero-body">
           <div className="container">
             <div className="columns is-size-5">
@@ -17,7 +14,15 @@ const Experience = props => {
               </div>
 
               <div className="column">
-                <strong>IBM Extreme Blue</strong>
+                <strong>IBM Extreme Blue </strong>
+                {/*<span>*/}
+                {/*  <span className="tag is-success is-rounded">FRONTEND</span>&nbsp;*/}
+                {/*  <span className="tag is-info is-rounded">CLOUD</span>*/}
+                {/*</span>*/}
+                <span className="icon">
+                  <ion-icon name="heart"></ion-icon>
+                </span>
+
                 <br/>
                 <span>Software Engineer</span>
                 <div className="is-hidden-tablet">
@@ -32,7 +37,13 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>Citizen Schools</strong>
+                <strong>Citizen Schools </strong>
+                <span className="icon">
+
+                </span>
+                <span className="icon">
+
+                </span>
                 <br/>
                 <span>Volunteer Assistant CS Teacher</span>
                 <div className="is-hidden-tablet">
@@ -48,7 +59,10 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>University of Michigan</strong>
+                <strong>University of Michigan </strong>
+                <span className="icon">
+
+                </span>
                 <br/>
                 <span>Research Assistant</span>
                 <div className="is-hidden-tablet">
@@ -64,7 +78,13 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>Diesel Labs</strong>
+                <strong>Diesel Labs </strong>
+                <span className="icon">
+
+                </span>
+                <span className="icon">
+
+                </span>
                 <br/>
                 <span>Software Engineer</span>
                 <div className="is-hidden-tablet">
@@ -79,7 +99,13 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>Ramp.Digital (KONTAKT.TO)</strong>
+                <strong>Ramp.Digital (KONTAKT.TO) </strong>
+                <span className="icon">
+
+                </span>
+                <span className="icon">
+
+                </span>
                 <br/>
                 <span>Software Engineer</span>
                 <div className="is-hidden-tablet">
@@ -94,7 +120,10 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>Sonorous</strong>
+                <strong>Sonorous </strong>
+                <span className="icon">
+
+                </span>
                 <br/>
                 <span>Founder</span>
                 <div className="is-hidden-tablet">

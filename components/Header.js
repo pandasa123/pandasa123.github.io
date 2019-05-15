@@ -10,7 +10,7 @@ const Header = props => {
            aria-label="main navigation">
         <div className="navbar-end">
           <div className="navbar-item">
-            <NightLight style={{paddingTop: '10%'}} className="navbar-item" theme={theme} toggle={toggle}/>
+            <NightLight className="navbar-item" theme={theme} toggle={toggle}/>
           </div>
         </div>
       </nav>

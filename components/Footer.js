@@ -1,7 +1,9 @@
 import React from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faFacebookSquare, faGithub, faLinkedin} from '@fortawesome/fontawesome-free-brands'
-import {faEnvelope} from '@fortawesome/fontawesome-free-solid'
+import MailIcon from 'mdi-react/MailIcon'
+import FacebookBoxIcon from 'mdi-react/FacebookBoxIcon'
+import LinkedinBoxIcon from 'mdi-react/LinkedinBoxIcon'
+import GithubCircleIcon from 'mdi-react/GithubCircleIcon'
+
 
 const footerStyle = {backgroundColor: 'white', paddingBottom: '30px'}
 const Footer = props => {
@@ -17,25 +19,25 @@ const Footer = props => {
             <span className="has-text-info">
               <a href="mailto:pandasa@umich.edu">
                 <span className="icon">
-                  <FontAwesomeIcon icon={faEnvelope} size="lg"/>
+                 <MailIcon/>
                 </span>
               </a>
               &nbsp;
               <a href="https://linkedin.com/in/sanketpanda/">
                 <span className="icon">
-                  <FontAwesomeIcon icon={faLinkedin} size="lg"/>
+                  <LinkedinBoxIcon/>
                 </span>
               </a>
               &nbsp;
               <a href="http://facebook.com/pandasa123">
                 <span className="icon">
-                  <FontAwesomeIcon icon={faFacebookSquare} size="lg"/>
+                  <FacebookBoxIcon/>
                 </span>
               </a>
               &nbsp;
               <a href="https://github.com/pandasa123">
                 <span className="icon">
-                  <FontAwesomeIcon icon={faGithub} size="lg"/>
+                  <GithubCircleIcon/>
                 </span>
               </a>
               {/*&nbsp;*/}

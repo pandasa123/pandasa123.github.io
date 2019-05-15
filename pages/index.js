@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import '../styles/bulma.scss'
 
 import Hello from '../components/Hello'
@@ -11,33 +11,26 @@ import ViewportHeader from '../components/ViewportHeader'
 
 // TODO: Add favicon
 
-let hour = new Date().getHours()
-let theme = false
-if (hour > 19 || hour < 8) {
-  theme = true
-}
-const toggleTheme = (newTheme) => {
-  theme = !newTheme
-}
-
-class Index extends React.Component {
-  componentDidMount() {
-    document.querySelector('html').style.backgroundColor = (theme === true) ? 'hsl(0, 0%, 21%)' : 'white'
-  }
-
-  render() {
-    return (
-      <div>
-        <ViewportHeader/>
-        <Header toggle={toggleTheme} theme={theme}/>
-        <Hello theme={theme}/>
-        <Background theme={theme}/>
-        <Skills theme={theme}/>
-        <Experience theme={theme}/>
-        <Footer theme={theme}/>
-      </div>
-    )
-  }
+const Index = () => {
+  const [useDarkMode, setDarkMode] = useState(false)
+  useEffect(() => {
+    let hour = new Date().getHours()
+    if (hour > 19 || hour < 8) {
+      setDarkMode(true)
+    }
+    document.querySelector('html').style.backgroundColor = (useDarkMode === true) ? 'hsl(0, 0%, 21%)' : 'white'
+  })
+  return (
+    <div>
+      <ViewportHeader/>
+      <Header toggle={setDarkMode} theme={useDarkMode}/>
+      <Hello theme={useDarkMode}/>
+      <Background theme={useDarkMode}/>
+      <Skills theme={useDarkMode}/>
+      <Experience theme={useDarkMode}/>
+      <Footer theme={useDarkMode}/>
+    </div>
+  )
 }
 
 export default Index

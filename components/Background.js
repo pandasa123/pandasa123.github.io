@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade'
 const Background = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
-      <Fade delayIn="800" distance="0px">
+      <Fade cascade delayIn="800" duration={1200} distance="0px">
         <div className="hero-body">
           <div className="container">
             <div className="columns">
