@@ -113,7 +113,7 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>Ramp.Digital (KONTAKT.TO) </strong>
+                <strong>Ramp.Digital </strong>
                 <div className="iconSet">
                   <span className="icon">
                     <HeartCircleIcon className="has-text-success"/>
