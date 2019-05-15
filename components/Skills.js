@@ -1,8 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 
-// TODO: Broken mobile header
-
 const Skills = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>

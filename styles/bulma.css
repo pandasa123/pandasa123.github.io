@@ -9139,17 +9139,10 @@ body {
   color: white;
 }
 
-.check {
-  padding-top: 1px;
-}
-.check.blueCheck {
-  color: #209cee;
-}
-.check.greenCheck {
-  color: #23d160;
-}
-.check.redCheck {
-  color: #ff3860;
+.iconSet {
+  position: relative;
+  top: 0.2rem;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=bulma.css.map */
