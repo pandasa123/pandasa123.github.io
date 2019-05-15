@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio",
+  "name": "sanketpanda_portfolio",
   "version": "1.0.0",
   "description": "Sanket Panda Portfolio",
   "scripts": {
@@ -8,6 +8,10 @@
     "start": "next start",
     "prod": "npm run build && npm start",
     "deploy": "next build && next export -o docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pandasa123/pandasa123.github.io"
   },
   "author": "Sanket Panda",
   "license": "MIT",
