@@ -18,19 +18,10 @@ const Experience = props => {
 
               <div className="column">
                 <strong>IBM Extreme Blue </strong>
-                {/*<span>*/}
-                {/*  <span className="tag is-success is-rounded">FRONTEND</span>&nbsp;*/}
-                {/*  <span className="tag is-info is-rounded">CLOUD</span>*/}
-                {/*</span>*/}
                 <span className="iconSet">
-                  <span className="icon">
-                    <HeartCircleIcon className="has-text-success"/>
-                  </span>&nbsp;
-                  <span className="icon">
-                    <CloudIcon className="has-text-info"/>
-                  </span>
+                 <span className="tag is-success is-rounded">FE</span>&nbsp;
+                 <span className="tag is-info is-rounded">CLOUD</span>
                 </span>
-
                 <br/>
                 <span>Software Engineer</span>
                 <div className="is-hidden-tablet">
@@ -47,12 +38,8 @@ const Experience = props => {
               <div className="column">
                 <strong>Citizen Schools </strong>
                 <span className="iconSet">
-                  <span className="icon">
-                    <HeartCircleIcon className="has-text-success"/>
-                  </span>&nbsp;
-                  <span className="icon">
-                    <CloudIcon className="has-text-info"/>
-                  </span>
+                 <span className="tag is-success is-rounded">FE</span>&nbsp;
+                 <span className="tag is-info is-rounded">CLOUD</span>
                 </span>
                 <br/>
                 <span>Volunteer Assistant CS Teacher</span>
@@ -71,9 +58,7 @@ const Experience = props => {
               <div className="column">
                 <strong>University of Michigan </strong>
                 <span className="iconSet">
-                  <span className="icon">
-                    <HeartCircleIcon className="has-text-success"/>
-                  </span>
+                 <span className="tag is-success is-rounded">FE</span>
                 </span>
                 <br/>
                 <span>Research Assistant</span>
@@ -92,12 +77,8 @@ const Experience = props => {
               <div className="column">
                 <strong>Diesel Labs </strong>
                 <span className="iconSet">
-                  <span className="icon">
-                    <HeartCircleIcon className="has-text-success"/>
-                  </span>&nbsp;
-                  <span className="icon">
-                    <DatabaseIcon className="has-text-danger"/>
-                  </span>
+                 <span className="tag is-success is-rounded">FE</span>&nbsp;
+                 <span className="tag is-danger is-rounded">BE</span>
                 </span>
                 <br/>
                 <span>Software Engineer</span>
@@ -114,14 +95,10 @@ const Experience = props => {
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
                 <strong>Ramp.Digital </strong>
-                <div className="iconSet">
-                  <span className="icon">
-                    <HeartCircleIcon className="has-text-success"/>
-                  </span>&nbsp;
-                  <span className="icon">
-                    <DatabaseIcon className="has-text-danger"/>
-                  </span>
-                </div>
+                <span className="iconSet">
+                 <span className="tag is-success is-rounded">FE</span>&nbsp;
+                 <span className="tag is-danger is-rounded">BE</span>
+                </span>
                 <br/>
                 <span>Software Engineer</span>
                 <div className="is-hidden-tablet">
@@ -138,9 +115,7 @@ const Experience = props => {
               <div className="column">
                 <strong>Sonorous </strong>
                 <span className="iconSet">
-                  <span className="icon">
-                    <DatabaseIcon className="has-text-danger"/>
-                  </span>
+                  <span className="tag is-danger is-rounded">BE</span>
                 </span>
                 <br/>
                 <span>Founder</span>
