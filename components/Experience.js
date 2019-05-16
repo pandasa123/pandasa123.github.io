@@ -87,6 +87,7 @@ const Experience = props => {
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
                 <strong>Diesel Labs </strong>
+                <br className="is-hidden-tablet"/>
                 <span className="badgeSet">
                  <span className="button is-outlined is-rounded is-small is-success">FRONTEND</span>&nbsp;
                   <span className="button is-outlined is-rounded is-small is-danger">BACKEND</span>
