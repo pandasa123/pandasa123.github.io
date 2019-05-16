@@ -20,7 +20,7 @@ const Featured = props => {
                   <img src="../static/MuseumCapture.png" alt="Museum Capture Diagram" id="museumCapture"/>
                 </a>
                 <div className="is-hidden-tablet">
-                  <strong>User Tracking using AWS Rekognition and Kinesis </strong>
+                  <strong>User Tracking using AWS Facial <q>Rekognition</q> and Kinesis </strong>
                   <a className="icon projectSet" href="https://github.com/pandasa123/VisitorDemographicsIPCamera">
                     <OpenInNewIcon className="has-text-link"/>
                   </a>
@@ -37,7 +37,7 @@ const Featured = props => {
                 </div>
               </div>
               <div className="column is-hidden-mobile">
-                <strong>User Tracking using AWS Facial Rekognition and Kinesis </strong>
+                <strong>User Tracking using AWS Facial <q>Rekognition</q> and Kinesis </strong>
                 <a className="icon projectSet" href="https://github.com/pandasa123/VisitorDemographicsIPCamera">
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
