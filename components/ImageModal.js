@@ -16,11 +16,8 @@ const ImageModal = props => {
       <div className="modal is-clipped" id={props.id} style={{minWidth: '100%', minHeight: '100%'}}>
         <div onClick={closeModal} className="modal-background"/>
         <div className="modal-content">
-        {/*<span className="image">*/}
-          <img src={props.src} alt={props.alt} />
-        {/*</span>*/}
+          <img src={props.src} alt={props.alt}/>
         </div>
-        <button className="modal-close is-large" aria-label="close" onClick={closeModal}/>
       </div>
     </div>
   )
