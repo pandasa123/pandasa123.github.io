@@ -4,11 +4,11 @@ import Fade from 'react-reveal/Fade'
 const Skills = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
-      <Fade cascade delayIn="800" duration={1200} distance="0px">
-        <div className="hero-body">
-          <div className="container">
-            <div className="columns is-1 is-size-5">
-              <div className="column is-2 is-hidden-mobile"/>
+      <div className="hero-body">
+        <div className="container">
+          <div className="columns is-1 is-size-5">
+            <div className="column is-2 is-hidden-mobile"/>
+            <Fade cascade delayIn="800" duration={1200} distance="0px">
               <div className="column is-2">
                 <span className="has-text-info title is-size-4">MY SKILLS</span>
               </div>
@@ -29,7 +29,9 @@ const Skills = props => {
                 <br/>
                 <span>ML.js</span>
               </div>
-              <div className="column is-hidden-tablet is-hidden-mobile"/>
+            </Fade>
+            <div className="column is-hidden-tablet is-hidden-mobile"/>
+            <Fade cascade delayIn="800" duration={1200} distance="0px">
               <div className="column is-2">
                 <strong className="shadow is-danger">BACKEND</strong>
                 <br/><br/>
@@ -49,7 +51,9 @@ const Skills = props => {
                 <br/>
                 <span>MongoDB</span>
               </div>
-              <div className="column is-hidden-tablet is-hidden-mobile"/>
+            </Fade>
+            <div className="column is-hidden-tablet is-hidden-mobile"/>
+            <Fade cascade delayIn="800" duration={1200} distance="0px">
               <div className="column is-2">
                 <strong className="shadow is-purple">CLOUD</strong>
                 <br/>
@@ -64,10 +68,10 @@ const Skills = props => {
                 <br/>
                 <span>CI / CD</span>
               </div>
-            </div>
+            </Fade>
           </div>
         </div>
-      </Fade>
+      </div>
     </section>
   )
 }

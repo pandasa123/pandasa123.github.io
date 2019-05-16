@@ -5,7 +5,6 @@ import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 const Featured = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
-
       <Fade delayIn="800" duration={1200} distance="0px">
         <div className="hero-body">
           <div className="container">
