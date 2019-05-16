@@ -19,7 +19,7 @@ const Featured = props => {
                   <img src="../static/MuseumCapture.png" alt="Museum Capture Diagram"/>
                 </div>
                 <div className="is-hidden-tablet">
-                  <strong>User Tracking using AWS Facial Rekognition and Kinesis </strong>
+                  <strong>User Tracking using AWS Rekognition and Kinesis </strong>
                   <a className="icon projectSet" href="https://github.com/pandasa123/VisitorDemographicsIPCamera">
                     <OpenInNewIcon className="has-text-link"/>
                   </a>

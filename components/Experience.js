@@ -4,9 +4,10 @@ import Fade from 'react-reveal/Fade'
 const Experience = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
-      <Fade delayIn="800" duration={1200} distance="0px">
-        <div className="hero-body">
-          <div className="container">
+      <div className="hero-body">
+        <div className="container">
+
+          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2">
@@ -29,7 +30,9 @@ const Experience = props => {
                 <span>May 2019 - Present</span>
               </div>
             </div>
+          </Fade>
 
+          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
@@ -48,8 +51,10 @@ const Experience = props => {
                 <span>May 2019 - May 2019</span>
               </div>
             </div>
+          </Fade>
 
 
+          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
@@ -67,8 +72,9 @@ const Experience = props => {
                 <span>January 2019 - April 2019</span>
               </div>
             </div>
+          </Fade>
 
-
+          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
@@ -87,7 +93,10 @@ const Experience = props => {
                 <span>May 2018 - August 2018</span>
               </div>
             </div>
+          </Fade>
 
+
+          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
@@ -106,7 +115,10 @@ const Experience = props => {
                 <span>June 2017 - September 2017</span>
               </div>
             </div>
+          </Fade>
 
+
+          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
@@ -124,10 +136,10 @@ const Experience = props => {
                 <span>May 2016 - June 2017</span>
               </div>
             </div>
+          </Fade>
 
-          </div>
         </div>
-      </Fade>
+      </div>
     </section>
   )
 }
