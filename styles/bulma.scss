@@ -109,7 +109,7 @@ body {
   animation-name: waving;
   animation-duration: 1s;
   animation-timing-function: ease;
-  animation-delay: 0s;
+  animation-delay: 0.5s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: both;
@@ -141,5 +141,34 @@ body {
       transform: rotate(0deg);
     }
   }
-
 }
+
+.point-down {
+  animation-name: pointing;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-play-state: running;
+
+  @keyframes pointing {
+    0% {
+      transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(5px);
+      -webkit-transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+    }
+  }
+}
+
+
+
+

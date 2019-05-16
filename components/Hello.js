@@ -1,14 +1,12 @@
 import React from 'react'
 
 const Hello = props => {
-
-  // TODO: Add animations
   return (
     <section
       className={props.theme ? 'hero is-fullheight-with-navbar is-dark' : 'hero is-fullheight-with-navbar'}>
       <div className="hero-body">
         <div className="container">
-          <h1 className="subtitle is-1">Hey there! <img className="emoji waving-hand animated"
+          <h1 className="subtitle is-1">Hey there! <img className="emoji waving-hand"
                                                         src="../static/waving-hand.png"
                                                         draggable={false}
                                                         style={{height: '3rem'}}
@@ -27,7 +25,7 @@ const Hello = props => {
                                                                                             }}
                                                                                             alt="cloud emoji"/>️</h2>
           <h3 className="subtitle is-size-3" style={{maxWidth: '800px', paddingTop: '20%'}}>
-            Find out more about me! <img className="emoji"
+            Find out more about me! <img className="emoji point-down"
                                          src="../static/point-down.png"
                                          draggable={false}
                                          style={{
