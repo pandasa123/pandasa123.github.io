@@ -13,13 +13,14 @@ import ViewportHeader from '../components/ViewportHeader'
 
 const Index = () => {
   const [useDarkMode, setDarkMode] = useState(true)
-  console.log(useDarkMode)
   useEffect(() => {
     let hour = new Date().getHours()
     if (hour > 7 && hour < 19) {
       setDarkMode(false)
+      document.getElementById('switchRoundedSuccess').checked = false
+    } else {
+      document.getElementById('switchRoundedSuccess').checked = true
     }
-    // document.querySelector('html').style.backgroundColor = (useDarkMode === false) ? 'hsl(0, 0%, 21%)' : 'white'
   }, [])
   return (
     <div>

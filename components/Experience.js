@@ -1,5 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 
 const Experience = props => {
   return (
@@ -12,6 +13,12 @@ const Experience = props => {
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2">
                 <span className="has-text-info title is-size-4">WHERE I'VE WORKED</span>
+                <br/>
+                <span className="is-size-6 has-text-info">SEE MY RESUME </span>
+                <a className="icon has-text-info" style={{position: 'relative', top: '2px'}}
+                   href="https://s3.amazonaws.com/sanket-panda-resume/SanketPandaResume.pdf">
+                  <OpenInNewIcon size={'1rem'}/>
+                </a>
               </div>
 
               <div className="column">
