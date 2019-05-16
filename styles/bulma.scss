@@ -106,36 +106,40 @@ body {
 }
 
 .waving-hand {
-  &.animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-  }
+  animation-name: waving;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-play-state: running;
 
-  &.wave {
-    animation-name: wave;
-  }
-
-  @keyframes wave {
-    from {
-      transform: none;
+  @keyframes waving {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
     }
-    15% {
-      transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
+    20% {
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg);
     }
-    30% {
-      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
-    }
-    45% {
-      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
+    40% {
+      -webkit-transform: rotate(-15deg);
+      transform: rotate(-15deg);
     }
     60% {
-      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
+      -webkit-transform: rotate(7deg);
+      transform: rotate(7deg);
     }
-    75% {
-      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+    80% {
+      -webkit-transform: rotate(-7deg);
+      transform: rotate(-7deg);
     }
-    to {
-      transform: none;
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
     }
   }
+
 }
