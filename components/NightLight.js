@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import WeatherSunnyIcon from 'mdi-react/WeatherSunnyIcon'
 import WeatherNightIcon from 'mdi-react/WeatherNightIcon'
 
 const NightLight = props => {
+  useEffect(() => {
+    if (props.theme === true) {
+      document.getElementById('switchRoundedSuccess').checked = true
+    }
+  })
+
   const setToggle = e => {
     props.toggle(e.target.checked)
   }

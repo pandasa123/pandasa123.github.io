@@ -13,11 +13,11 @@ import ViewportHeader from '../components/ViewportHeader'
 // TODO: Sentiment / Demographic Video Capture, Hello PAM!, and MSAS for featured
 
 const Index = () => {
-  const [useDarkMode, setDarkMode] = useState(false)
+  const [useDarkMode, setDarkMode] = useState(true)
   useEffect(() => {
     let hour = new Date().getHours()
-    if (hour > 19 || hour < 8) {
-      setDarkMode(true)
+    if (hour > 7 && hour < 19) {
+      setDarkMode(false)
     }
     document.querySelector('html').style.backgroundColor = (useDarkMode === true) ? 'hsl(0, 0%, 21%)' : 'white'
   })
