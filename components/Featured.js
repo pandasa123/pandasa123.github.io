@@ -16,7 +16,7 @@ const Featured = props => {
               </div>
               <div className="column is-5">
                 <div className="image">
-                  <img src="../static/MuseumCapture.png"/>
+                  <img src="../static/MuseumCapture.png" alt="Museum Capture Diagram"/>
                 </div>
                 <div className="is-hidden-tablet">
                   <strong>User Tracking using AWS Facial Rekognition and Kinesis </strong>
@@ -61,7 +61,7 @@ const Featured = props => {
               <div className="column is-2"/>
               <div className="column is-5">
                 <div className="image">
-                  <img src="../static/pam.png"/>
+                  <img src="../static/pam.png" alt="Hello PAM Demo"/>
                 </div>
                 <div className="is-hidden-tablet">
                   <strong>Hello PAM! </strong>
@@ -103,7 +103,7 @@ const Featured = props => {
               <div className="column is-2"/>
               <div className="column is-5">
                 <div className="image">
-                  <img src="../static/PlayerHeatmap.png"/>
+                  <img src="../static/PlayerHeatmap.png" alt="Player Heatmap Demo"/>
                 </div>
                 <div className="is-hidden-tablet">
                   <strong>Women's Field Hockey Analytics Dashboard</strong>
