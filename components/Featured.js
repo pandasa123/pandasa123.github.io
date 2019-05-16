@@ -15,9 +15,9 @@ const Featured = props => {
                 <span className="has-text-info title is-size-4">FEATURED PROJECTS</span>
               </div>
               <div className="column is-5">
-                <div className="image">
-                  <img src="../static/MuseumCapture.png" alt="Museum Capture Diagram"/>
-                </div>
+                <a href="../static/MuseumCapture.png">
+                  <img src="../static/MuseumCapture.png" alt="Museum Capture Diagram" id="museumCapture"/>
+                </a>
                 <div className="is-hidden-tablet">
                   <strong>User Tracking using AWS Rekognition and Kinesis </strong>
                   <a className="icon projectSet" href="https://github.com/pandasa123/VisitorDemographicsIPCamera">
@@ -60,9 +60,7 @@ const Featured = props => {
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2"/>
               <div className="column is-5">
-                <div className="image">
-                  <img src="../static/pam.png" alt="Hello PAM Demo"/>
-                </div>
+                <a href="../static/pam.png"><img src="../static/pam.png" alt="Hello PAM Demo" id="pam"/></a>
                 <div className="is-hidden-tablet">
                   <strong>Hello PAM! </strong>
                   <a className="icon projectSet" href="https://github.com/pandasa123/Hello_PAM">
@@ -102,9 +100,9 @@ const Featured = props => {
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2"/>
               <div className="column is-5">
-                <div className="image">
-                  <img src="../static/PlayerHeatmap.png" alt="Player Heatmap Demo"/>
-                </div>
+                <a href="../static/PlayerHeatmap.png">
+                  <img src="../static/PlayerHeatmap.png" alt="Player Heatmap Demo" id="playerHeatmap"/>
+                </a>
                 <div className="is-hidden-tablet">
                   <strong>Women's Field Hockey Analytics Dashboard</strong>
                   <br/><br/>
