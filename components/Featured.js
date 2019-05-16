@@ -5,10 +5,9 @@ import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 const Featured = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
-      <Fade delayIn="800" duration={1200} distance="0px">
-        <div className="hero-body">
-          <div className="container">
-
+      <div className="hero-body">
+        <div className="container">
+          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2">
@@ -53,7 +52,9 @@ const Featured = props => {
               </div>
             </div>
             <br className="is-hidden-mobile"/>
+          </Fade>
 
+          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2"/>
@@ -92,8 +93,9 @@ const Featured = props => {
               </div>
             </div>
             <br className="is-hidden-mobile"/>
+          </Fade>
 
-
+          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2"/>
@@ -129,10 +131,9 @@ const Featured = props => {
                 </span>
               </div>
             </div>
-          </div>
+          </Fade>
         </div>
-
-      </Fade>
+      </div>
     </section>
   )
 }
