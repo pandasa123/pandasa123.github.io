@@ -1,23 +1,25 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
+import ImageModal from './ImageModal'
 
 const Featured = props => {
   return (
     <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
-      <div className="hero-body">
-        <div className="container">
 
-          <Fade delayIn="800" duration={1200} distance="0px">
+      <Fade delayIn="800" duration={1200} distance="0px">
+        <div className="hero-body">
+          <div className="container">
+
             <div className="columns is-size-5">
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2">
                 <span className="has-text-info title is-size-4">FEATURED PROJECTS</span>
               </div>
               <div className="column is-5">
-                <a href="../static/MuseumCapture.png">
-                  <img src="../static/MuseumCapture.png" alt="Museum Capture Diagram" id="museumCapture"/>
-                </a>
+                {/*<a href="../static/MuseumCapture.png">*/}
+                <ImageModal src="../static/MuseumCapture.png" alt="Museum Capture Diagram" id="museumCapture"/>
+                {/*</a>*/}
                 <div className="is-hidden-tablet">
                   <strong>User Tracking using AWS Rekognition and Kinesis </strong>
                   <a className="icon projectSet" href="https://github.com/pandasa123/VisitorDemographicsIPCamera">
@@ -52,15 +54,13 @@ const Featured = props => {
                 </span>
               </div>
             </div>
-          </Fade>
-          <br className="is-hidden-mobile"/>
+            <br className="is-hidden-mobile"/>
 
-          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2"/>
               <div className="column is-5">
-                <a href="../static/pam.png"><img src="../static/pam.png" alt="Hello PAM Demo" id="pam"/></a>
+                <ImageModal src="../static/pam.png" alt="Hello PAM Demo" id="pam"/>
                 <div className="is-hidden-tablet">
                   <strong>Hello PAM! </strong>
                   <a className="icon projectSet" href="https://github.com/pandasa123/Hello_PAM">
@@ -91,18 +91,16 @@ const Featured = props => {
                 </span>
               </div>
             </div>
-          </Fade>
-          <br className="is-hidden-mobile"/>
+            <br className="is-hidden-mobile"/>
 
 
-          <Fade delayIn="800" duration={1200} distance="0px">
             <div className="columns is-size-5">
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2"/>
               <div className="column is-5">
-                <a href="../static/PlayerHeatmap.png">
-                  <img src="../static/PlayerHeatmap.png" alt="Player Heatmap Demo" id="playerHeatmap"/>
-                </a>
+                {/*<a href="../static/PlayerHeatmap.png">*/}
+                <ImageModal src="../static/PlayerHeatmap.png" alt="Player Heatmap Demo" id="playerHeatmap"/>
+                {/*</a>*/}
                 <div className="is-hidden-tablet">
                   <strong>Women's Field Hockey Analytics Dashboard</strong>
                   <br/><br/>
@@ -131,9 +129,10 @@ const Featured = props => {
                 </span>
               </div>
             </div>
-          </Fade>
+          </div>
         </div>
-      </div>
+
+      </Fade>
     </section>
   )
 }

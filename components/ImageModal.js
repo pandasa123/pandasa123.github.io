@@ -12,12 +12,13 @@ const ImageModal = props => {
   return (
     <div className="image">
       <img src={props.src} alt={props.alt} onClick={openModal}/>
-      <div className="modal is-clipped" id={props.id}>
+      <br/>
+      <div className="modal is-clipped" id={props.id} style={{minWidth: '100%', minHeight: '100%'}}>
         <div onClick={closeModal} className="modal-background"/>
         <div className="modal-content">
-        <span className="image">
-          <img src={props.src} alt={props.alt}/>
-        </span>
+        {/*<span className="image">*/}
+          <img src={props.src} alt={props.alt} />
+        {/*</span>*/}
         </div>
         <button className="modal-close is-large" aria-label="close" onClick={closeModal}/>
       </div>
