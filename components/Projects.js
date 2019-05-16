@@ -31,11 +31,11 @@ const Projects = props => {
                   </span>
                 </span>
                 <div className="is-hidden-tablet padTopBuilt">
-                  <span>October 2017</span>
+                  <span>April 2019</span>
                 </div>
               </div>
               <div className="column is-hidden-mobile">
-                <span>October 2017</span>
+                <span>April 2019</span>
               </div>
             </div>
             <br/>
@@ -57,11 +57,11 @@ const Projects = props => {
                   </span>
                 </span>
                 <div className="is-hidden-tablet padTopBuilt">
-                  <span>April 2019</span>
+                  <span>March 2019</span>
                 </div>
               </div>
               <div className="column is-hidden-mobile">
-                <span>April 2019</span>
+                <span>March 2019</span>
               </div>
             </div>
             <br/>
