@@ -16,7 +16,7 @@ const Hello = props => {
             Panda</strong>! I'm a&nbsp;
             <span className="shadow is-danger">fullstack</span> developer interested in <span
               className="shadow is-success">beautiful</span>, scalable
-            applications built in the <span className="shadow is-info">cloud</span>! <img className="emoji"
+            applications built in the <span className="shadow is-purple">cloud</span>! <img className="emoji"
                                                                                           src="../static/cloud.png"
                                                                                           draggable={false}
                                                                                           style={{

@@ -1,8 +1,5 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-import HeartCircleIcon from 'mdi-react/HeartCircleIcon'
-import CloudIcon from 'mdi-react/CloudIcon'
-import DatabaseIcon from 'mdi-react/DatabaseIcon'
 
 const Experience = props => {
   return (
@@ -20,7 +17,7 @@ const Experience = props => {
                 <strong>IBM Extreme Blue </strong>
                 <span className="badgeSet">
                   <span className="button is-outlined is-rounded is-small is-success">FRONTEND</span>&nbsp;
-                  <span className="button is-outlined is-rounded is-small is-info">CLOUD</span>
+                  <span className="button is-outlined is-rounded is-small is-purple">CLOUD</span>
                 </span>
                 <br/>
                 <span>Software Engineer</span>
@@ -39,7 +36,7 @@ const Experience = props => {
                 <strong>Citizen Schools </strong>
                 <span className="badgeSet">
                  <span className="button is-outlined is-rounded is-small is-success">FRONTEND</span>&nbsp;
-                 <span className="button is-outlined is-rounded is-small is-info">CLOUD</span>
+                  <span className="button is-outlined is-rounded is-small is-purple">CLOUD</span>
                 </span>
                 <br/>
                 <span>Volunteer Assistant CS Teacher</span>
@@ -78,7 +75,7 @@ const Experience = props => {
                 <strong>Diesel Labs </strong>
                 <span className="badgeSet">
                  <span className="button is-outlined is-rounded is-small is-success">FRONTEND</span>&nbsp;
-                 <span className="button is-outlined is-rounded is-small is-danger">BACKEND</span>
+                  <span className="button is-outlined is-rounded is-small is-danger">BACKEND</span>
                 </span>
                 <br/>
                 <span>Software Engineer</span>
@@ -97,7 +94,7 @@ const Experience = props => {
                 <strong>Ramp.Digital </strong>
                 <span className="badgeSet">
                  <span className="button is-outlined is-rounded is-small is-success">FRONTEND</span>&nbsp;
-                 <span className="button is-outlined is-rounded is-small is-danger">BACKEND</span>
+                  <span className="button is-outlined is-rounded is-small is-danger">BACKEND</span>
                 </span>
                 <br/>
                 <span>Software Engineer</span>

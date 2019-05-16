@@ -51,7 +51,7 @@ const Skills = props => {
               </div>
               <div className="column is-hidden-tablet is-hidden-mobile"/>
               <div className="column is-2">
-                <strong className="shadow is-info">CLOUD</strong>
+                <strong className="shadow is-purple">CLOUD</strong>
                 <br/>
                 <br/>
                 <span>AWS</span>

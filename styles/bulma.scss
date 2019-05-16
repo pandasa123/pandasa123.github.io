@@ -41,11 +41,20 @@ body {
     -webkit-box-shadow: inset 0 -2px 0 $pastel-info;
     box-shadow: inset 0 -2px 0 $pastel-info;
   }
+  &.is-purple {
+    -moz-box-shadow: inset 0 -2px 0 $purple;
+    -webkit-box-shadow: inset 0 -2px 0 $purple;
+    box-shadow: inset 0 -2px 0 $purple;
+  }
 }
 
-.text-right-until-mobile {
-  @media only screen and (min-width: 769px) {
-    text-align: right;
+.button {
+  &.is-purple {
+    &.is-outlined {
+      border-color: $purple;
+      color: $purple;
+      background: transparent;
+    }
   }
 }
 
@@ -68,8 +77,24 @@ body {
 
 .badgeSet {
   display: inline-block;
-  position: relative;
   pointer-events: none;
+}
+
+
+.builtSet {
+  position: relative;
+  top: 0.5rem;
+  pointer-events: none;
+}
+
+.projectSet {
+  position: relative;
+  top: 4px;
+  //padding-bottom: 10px;
+}
+
+.padTopBuilt {
+  padding-top: 0.7rem;
 }
 
 .emoji {

@@ -7,7 +7,10 @@ import Footer from '../components/Footer'
 import Background from '../components/Background'
 import Skills from '../components/Skills'
 import Experience from '../components/Experience'
+import Projects from '../components/Projects'
 import ViewportHeader from '../components/ViewportHeader'
+
+// TODO: Sentiment / Demographic Video Capture, Hello PAM!, and MSAS for featured
 
 const Index = () => {
   const [useDarkMode, setDarkMode] = useState(false)
@@ -26,6 +29,7 @@ const Index = () => {
       <Background theme={useDarkMode}/>
       <Skills theme={useDarkMode}/>
       <Experience theme={useDarkMode}/>
+      <Projects theme={useDarkMode}/>
       <Footer theme={useDarkMode}/>
     </div>
   )

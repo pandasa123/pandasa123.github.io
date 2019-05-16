@@ -21,7 +21,7 @@ const Background = props => {
                   <br/><br/>
                   I love building cool, meaningful applications that leverage a variety of <span
                     className="shadow is-success">web</span> and <span
-                    className="shadow is-info">cloud</span> technologies
+                    className="shadow is-purple">cloud</span> technologies
                 </span>
               </div>
               <div className="column"/>
