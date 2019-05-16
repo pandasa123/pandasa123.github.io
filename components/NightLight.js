@@ -6,8 +6,10 @@ const NightLight = props => {
   useEffect(() => {
     if (props.theme === true) {
       document.getElementById('switchRoundedSuccess').checked = true
+    } else {
+      document.getElementById('switchRoundedSuccess').checked = false
     }
-  })
+  }, [])
 
   const setToggle = e => {
     props.toggle(e.target.checked)
