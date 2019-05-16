@@ -1,4 +1,4 @@
-# On the site
+# On the site [![Build Status](https://travis-ci.com/pandasa123/pandasa123.github.io.svg?branch=master)](https://travis-ci.com/pandasa123/pandasa123.github.io)
 
 Built using Next.js, a Server Side Rendered React framework, and Bulma. 
 Everything is responsive (hopefully) and dark mode is contextually aware. Experimenting with React Hooks, UI/UX, AWS etc
