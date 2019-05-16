@@ -14,7 +14,8 @@ const Experience = props => {
               <div className="column is-2">
                 <span className="has-text-info title is-size-4">WHERE I'VE WORKED</span>
                 <br/>
-                <span className="is-size-6 has-text-info">SEE MY RESUME </span>
+                <a href="https://s3.amazonaws.com/sanket-panda-resume/SanketPandaResume.pdf"
+                   className="is-size-6 has-text-info">SEE MY RESUME </a>
                 <a className="icon has-text-info" style={{position: 'relative', top: '2px'}}
                    href="https://s3.amazonaws.com/sanket-panda-resume/SanketPandaResume.pdf">
                   <OpenInNewIcon size={'1rem'}/>
