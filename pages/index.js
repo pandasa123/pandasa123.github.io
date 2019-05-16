@@ -15,7 +15,7 @@ const Index = () => {
   const [useDarkMode, setDarkMode] = useState(true)
   useEffect(() => {
     let hour = new Date().getHours()
-    if (hour > 7 && hour < 19) {
+    if (hour > 6 && hour < 18) {
       setDarkMode(false)
       document.getElementById('switchRoundedSuccess').checked = false
     } else {
