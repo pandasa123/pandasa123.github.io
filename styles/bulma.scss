@@ -1,6 +1,15 @@
-// We can import bulma into the project using Sass.
-@import "../node_modules/bulma/bulma";
-// TODO: Import essentials only! Reduced bundle size
+//@import "../node_modules/bulma/bulma";
+
+@import "../node_modules/bulma/sass/utilities/_all";
+@import "../node_modules/bulma/sass/base/_all";
+@import "../node_modules/bulma/sass/components/navbar";
+@import "../node_modules/bulma/sass/elements/button";
+@import "../node_modules/bulma/sass/elements/container";
+@import "../node_modules/bulma/sass/elements/icon";
+@import "../node_modules/bulma/sass/elements/image";
+@import "../node_modules/bulma/sass/elements/title";
+@import "../node_modules/bulma/sass/grid/columns";
+@import "../node_modules/bulma/sass/layout/_all";
 
 $pastel-info: rgba(36, 177, 209, .2);
 
@@ -8,8 +17,6 @@ body {
   font-family: "Proxima Nova", system-ui, sans-serif;
   letter-spacing: 1px;
 }
-
-// TODO: Animate underline
 
 .shadow {
   &.is-info {
