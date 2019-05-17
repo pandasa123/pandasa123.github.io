@@ -1,7 +1,7 @@
 # On the site [![Build Status](https://travis-ci.com/pandasa123/pandasa123.github.io.svg?branch=master)](https://travis-ci.com/pandasa123/pandasa123.github.io)
 
 Built using Next.js, a Server Side Rendered React framework, and Bulma. 
-This is a responsive (hopefully) PWA / AMP site with a contextually aware dark mode based on system settings / time. Experimenting with React Hooks, UI/UX, AWS etc
+This is a responsive (hopefully) PWA / AMP site with a contextually aware dark mode based on time. Experimenting with React Hooks, UI/UX, AWS etc
 
 ## Running
 

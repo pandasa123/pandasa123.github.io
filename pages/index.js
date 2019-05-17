@@ -13,14 +13,15 @@ import Projects from '../components/Projects'
 import ViewportHeader from '../components/ViewportHeader'
 
 const Index = () => {
-  const [useDarkMode, setDarkMode] = useState(null)
   const getTheme = () => {
     let hour = new Date().getHours()
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return true
-    }
+    // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //   return true
+    // }
     return (hour < 6 || hour > 19)
   }
+
+  const [useDarkMode, setDarkMode] = useState(getTheme())
 
   useEffect(() => {
     let darkMode = getTheme()
