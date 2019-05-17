@@ -14,8 +14,8 @@ const Featured = props => {
                 <span className="has-text-info title is-size-4">FEATURED PROJECTS</span>
               </div>
               <div className="column is-5">
-                <a href="../static/MuseumCapture.png">
-                  <img src="../static/MuseumCapture.png" alt="Museum Capture Diagram" id="museumCapture"/>
+                <a href="../static/MuseumCapture.jpg">
+                  <img src="../static/MuseumCapture.jpg" alt="Museum Capture Diagram" id="museumCapture"/>
                 </a>
                 <div className="is-hidden-tablet">
                   <strong>User Tracking using AWS Facial <q>Rekognition</q> and Kinesis </strong>
@@ -59,8 +59,8 @@ const Featured = props => {
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2"/>
               <div className="column is-5">
-                <a href="../static/pam.png">
-                  <img src="../static/pam.png" alt="Hello PAM Demo" id="pam"/>
+                <a href="../static/pam.jpg">
+                  <img src="../static/pam.jpg" alt="Hello PAM Demo" id="pam"/>
                 </a>
                 <div className="is-hidden-tablet">
                   <strong>Hello PAM! </strong>
@@ -100,8 +100,8 @@ const Featured = props => {
               <div className="column is-2 is-hidden-mobile"/>
               <div className="column is-2"/>
               <div className="column is-5">
-                <a href="../static/PlayerHeatmap.png">
-                  <img src="../static/PlayerHeatmap.png" alt="Player Heatmap Demo" id="playerHeatmap"/>
+                <a href="../static/PlayerHeatmap.jpg">
+                  <img src="../static/PlayerHeatmap.jpg" alt="Player Heatmap Demo" id="playerHeatmap"/>
                 </a>
                 <div className="is-hidden-tablet">
                   <strong>Women's Field Hockey Analytics Dashboard</strong>
