@@ -21,6 +21,10 @@ const Projects = props => {
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
                 <br/>
+                <div className="is-hidden-tablet">
+                    <span>April 2019</span>
+                    <br/>
+                </div>
                 <span className="is-size-6">
                   <span>Sigma Stocks analyses stocks from close to open and predicts the best stocks to invest for the upcoming day using finance news aggregation and scoring paired with Linear Regression modelling</span>
                   <br/>
@@ -31,9 +35,6 @@ const Projects = props => {
                     <span className="button is-outlined is-rounded is-small is-purple">AWS</span>
                   </span>
                 </span>
-                <div className="is-hidden-tablet padTopBuilt">
-                  <span>April 2019</span>
-                </div>
               </div>
               <div className="column is-hidden-mobile">
                 <span>April 2019</span>
@@ -51,6 +52,10 @@ const Projects = props => {
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
                 <br/>
+                <div className="is-hidden-tablet">
+                  <span>March 2019</span>
+                  <br/>
+                </div>
                 <span className="is-size-6">
                   <span>Beautifully simple prime number visualisation using dynamic programming and efficient canvas drawing of grid of n<sup>2</sup> x n<sup>2</sup> numbers</span>
                   <br/>
@@ -60,9 +65,6 @@ const Projects = props => {
                     <span className="button is-outlined is-rounded is-small is-purple">HEROKU</span>
                   </span>
                 </span>
-                <div className="is-hidden-tablet padTopBuilt">
-                  <span>March 2019</span>
-                </div>
               </div>
               <div className="column is-hidden-mobile">
                 <span>March 2019</span>
@@ -80,6 +82,10 @@ const Projects = props => {
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
                 <br/>
+                <div className="is-hidden-tablet">
+                  <span>May 2018</span>
+                  <br/>
+                </div>
                 <span className="is-size-6">
                   <span>Calculating and visualising the average perceived luminance of Marvel and D.C. movies</span>
                   <br/>
@@ -90,9 +96,6 @@ const Projects = props => {
                     <span className="button is-outlined is-rounded is-small is-danger">NUMPY</span>
                   </span>
                 </span>
-                <div className="is-hidden-tablet padTopBuilt">
-                  <span>May 2018</span>
-                </div>
               </div>
               <div className="column is-hidden-mobile">
                 <span>May 2018</span>
@@ -110,6 +113,10 @@ const Projects = props => {
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
                 <br/>
+                <div className="is-hidden-tablet">
+                  <span>February 2018</span>
+                  <br/>
+                </div>
                 <span className="is-size-6">
                   <span>Built during the Bosch / Texas Instruments Makeathon, BlockDRM aimed to solve DRM authenticity through the power of Blockchain. Our proof of concept featured a rudimentary game library whose collection can be expanded and shared</span>
                   <br/>
@@ -119,9 +126,6 @@ const Projects = props => {
                     <span className="button is-outlined is-rounded is-small is-danger">REST</span>
                   </span>
                 </span>
-                <div className="is-hidden-tablet padTopBuilt">
-                  <span>February 2018</span>
-                </div>
               </div>
               <div className="column is-hidden-mobile">
                 <span>February 2018</span>
@@ -139,6 +143,10 @@ const Projects = props => {
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
                 <br/>
+                <div className="is-hidden-tablet">
+                  <span>January 2018</span>
+                  <br/>
+                </div>
                 <span className="is-size-6">
                   <span>Using Abstract Relational Concepts and Levenshtein distance algorithm, Word Trainer teaches children how to identify vowels and consonants through the juxtaposition of two words</span>
                   <br/>
@@ -147,9 +155,6 @@ const Projects = props => {
                     <span className="button is-outlined is-rounded is-small is-purple">AWS</span>
                   </span>
                 </span>
-                <div className="is-hidden-tablet padTopBuilt">
-                  <span>January 2018</span>
-                </div>
               </div>
               <div className="column is-hidden-mobile">
                 <span>January 2018</span>
