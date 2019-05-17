@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import '../styles/main.scss'
-import {withAmp} from 'next/amp'
 
 import Hello from '../components/Hello'
 import Header from '../components/Header'
@@ -43,4 +42,4 @@ const Index = () => {
   )
 }
 
-export default withAmp(Index, {hybrid: true})
+export default Index
