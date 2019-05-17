@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import '../styles/bulma.scss'
+import '../styles/main.scss'
 
 import Hello from '../components/Hello'
 import Header from '../components/Header'
