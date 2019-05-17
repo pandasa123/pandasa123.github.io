@@ -23,4 +23,4 @@ const ImageModal = props => {
   )
 }
 
-export default ImageModal
+
