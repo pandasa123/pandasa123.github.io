@@ -35,7 +35,7 @@ const Experience = props => {
                 </div>
                 <ul className="is-size-7">
                   <br/>
-                  <li>Extending Salesforce Active Chat and integrating IBM Watson features to expedite average case
+                  <li>Extended Salesforce Active Chat and integrating IBM Watson features to expedite average case
                     handling time
                   </li>
                   <br/>
