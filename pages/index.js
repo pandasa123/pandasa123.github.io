@@ -22,6 +22,8 @@ const Index = () => {
 
   const [useDarkMode, setDarkMode] = useState(getTheme())
 
+  // const [useBackground, setBackground] = useState(false)
+
   useEffect(() => {
     let darkMode = getTheme()
     document.getElementById('switchRoundedSuccess').checked = darkMode

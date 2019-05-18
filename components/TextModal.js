@@ -19,13 +19,13 @@ const TextModal = props => {
       </a>
       <br/>
       <div className="modal is-clipped" id={props.id}>
-        <div onClick={closeModal} className="modal-background"
-             style={{top: '0', bottom: '0', left: '0', right: '0', position: 'absolute'}}/>
+        {/*<div onClick={closeModal} className="modal-background"*/}
+        {/*     style={{top: '0', bottom: '0', left: '0', right: '0', position: 'absolute'}}/>*/}
         <div className="modal-content">
           <article className="message is-info is-medium">
           <div className="message-header">
             <p>{props.title}</p>
-            {/*<button className="delete" aria-label="delete" onClick={closeModal}/>*/}
+            <button className="delete" aria-label="delete" onClick={closeModal}/>
           </div>
           <div className="message-body">
             <ul className="is-centered">
