@@ -10,8 +10,18 @@
 @import "../node_modules/bulma/sass/elements/title";
 @import "../node_modules/bulma/sass/grid/columns";
 @import "../node_modules/bulma/sass/layout/_all";
+@import "../node_modules/bulma/sass/components/message";
+@import "../node_modules/bulma/sass/components/modal";
 
 $pastel-info: rgba(36, 177, 209, .2);
+
+html, body {
+  height: 100%;
+}
+
+.modal-background {
+  height: 100vh;
+}
 
 body {
   font-family: "Proxima Nova", system-ui, sans-serif;
