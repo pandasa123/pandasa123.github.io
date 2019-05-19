@@ -3,8 +3,8 @@ import Fade from 'react-reveal/Fade'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import ThemeContext from '../utilities/ThemeContext'
 
-const Projects = props => {
-  const useDarkMode = useContext(ThemeContext)
+const Projects = () => {
+  const {useDarkMode} = useContext(ThemeContext)
   return (
     <section className={useDarkMode ? 'hero is-medium is-dark' : 'hero is-medium'}>
       <div className="hero-body">

@@ -1,5 +1,5 @@
 const getTheme = () => {
-  let hour = new Date().getHours()
+  const hour = new Date().getHours()
   return (hour < 6 || hour > 19)
 }
 

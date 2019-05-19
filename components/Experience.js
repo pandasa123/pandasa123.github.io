@@ -4,7 +4,7 @@ import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import ThemeContext from '../utilities/ThemeContext'
 
 const Experience = () => {
-  const useDarkMode = useContext(ThemeContext)
+  const {useDarkMode} = useContext(ThemeContext)
   return (
     <section className={useDarkMode ? 'hero is-medium is-dark' : 'hero is-medium'}>
       {/*<Fade delayIn="800" duration={1200} distance="0px">*/}

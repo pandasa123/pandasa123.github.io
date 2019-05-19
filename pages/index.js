@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import '../styles/main.scss'
 
 import Hello from '../components/Hello'
@@ -15,16 +15,10 @@ import ThemeContext from '../utilities/ThemeContext'
 
 const Index = () => {
   const [useDarkMode, setDarkMode] = useState(getTheme)
-
-  useEffect(() => {
-    document.getElementById('switchRoundedSuccess').checked = useDarkMode
-    setDarkMode(useDarkMode)
-  }, [])
-
   return (
-    <ThemeContext.Provider value={useDarkMode}>
+    <ThemeContext.Provider value={{useDarkMode: useDarkMode, toggle: setDarkMode}}>
       <ViewportHeader/>
-      <Header toggle={setDarkMode}/>
+      <Header/>
       <Hello/>
       <Background/>
       <Skills/>
