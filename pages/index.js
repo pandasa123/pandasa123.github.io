@@ -15,7 +15,6 @@ import ThemeContext from '../utilities/ThemeContext'
 
 const Index = () => {
   const [useDarkMode, setDarkMode] = useState(getTheme)
-  console.log(useDarkMode)
   return (
     <ThemeContext.Provider value={{useDarkMode: useDarkMode, toggle: setDarkMode}}>
       <ViewportHeader/>
