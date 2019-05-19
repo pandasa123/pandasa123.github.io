@@ -10,11 +10,10 @@ import Experience from '../components/Experience'
 import Featured from '../components/Featured'
 import Projects from '../components/Projects'
 import ViewportHeader from '../components/ViewportHeader'
-import getTheme from '../utilities/getTheme'
 import ThemeContext from '../utilities/ThemeContext'
 
 const Index = () => {
-  const [useDarkMode, setDarkMode] = useState(getTheme())
+  const [useDarkMode, setDarkMode] = useState(true)
   return (
     <ThemeContext.Provider value={{useDarkMode: useDarkMode, toggle: setDarkMode}}>
       <ViewportHeader/>

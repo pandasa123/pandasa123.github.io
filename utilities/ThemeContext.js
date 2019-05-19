@@ -1,7 +1,6 @@
 import {createContext} from 'react'
-import getTheme from './getTheme'
 
-const theme = getTheme()
+const theme = false
 const ThemeContext = createContext({useDarkMode: theme, toggle: null})
 
 export default ThemeContext
