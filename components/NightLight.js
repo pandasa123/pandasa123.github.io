@@ -14,7 +14,7 @@ const NightLight = props => {
           <WeatherSunnyIcon/>
         </span>
         <input id="switchRoundedSuccess" type="checkbox" name="switchRoundedSuccess"
-               className="switch is-rounded is-success" onClick={setToggle} defaultChecked={props.theme}/>
+               className="switch is-rounded is-success" onClick={setToggle} checked={props.theme}/>
         <label htmlFor="switchRoundedSuccess"/>
         <span className="icon" style={{position: 'relative', top: '6px'}}>
           <WeatherNightIcon/>
