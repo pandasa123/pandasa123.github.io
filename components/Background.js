@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Fade from 'react-reveal/Fade'
+import ThemeContext from '../utilities/ThemeContext'
 
-const Background = props => {
+const Background = () => {
+  const useDarkMode = useContext(ThemeContext)
   return (
-    <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
+    <section className={useDarkMode ? 'hero is-medium is-dark' : 'hero is-medium'}>
       <Fade cascade delayIn="800" duration={1200} distance="0px">
         <div className="hero-body">
           <div className="container">

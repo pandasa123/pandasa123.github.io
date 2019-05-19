@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import '../styles/main.scss'
 
 import Hello from '../components/Hello'
@@ -11,27 +11,28 @@ import Featured from '../components/Featured'
 import Projects from '../components/Projects'
 import ViewportHeader from '../components/ViewportHeader'
 import getTheme from '../utilities/getTheme'
+import ThemeContext from '../utilities/ThemeContext'
 
 const Index = () => {
   const [useDarkMode, setDarkMode] = useState(getTheme)
 
-  // useEffect(() => {
-  //   let darkMode = getTheme()
-  //   document.getElementById('switchRoundedSuccess').checked = darkMode
-  //   setDarkMode(darkMode)
-  // }, [])
+  useEffect(() => {
+    document.getElementById('switchRoundedSuccess').checked = useDarkMode
+    setDarkMode(useDarkMode)
+  }, [])
+
   return (
-    <div>
+    <ThemeContext.Provider value={useDarkMode}>
       <ViewportHeader/>
-      <Header toggle={setDarkMode} theme={useDarkMode}/>
-      <Hello theme={useDarkMode}/>
-      <Background theme={useDarkMode}/>
-      <Skills theme={useDarkMode}/>
-      <Experience theme={useDarkMode}/>
-      <Featured theme={useDarkMode}/>
-      <Projects theme={useDarkMode}/>
-      <Footer theme={useDarkMode}/>
-    </div>
+      <Header toggle={setDarkMode}/>
+      <Hello/>
+      <Background/>
+      <Skills/>
+      <Experience/>
+      <Featured/>
+      <Projects/>
+      <Footer/>
+    </ThemeContext.Provider>
   )
 }
 
