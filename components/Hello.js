@@ -3,6 +3,7 @@ import ThemeContext from '../utilities/ThemeContext'
 
 const Hello = () => {
   const {useDarkMode} = useContext(ThemeContext)
+  console.log(useDarkMode)
   return (
     <section
       className={useDarkMode ? 'hero is-fullheight-with-navbar is-dark' : 'hero is-fullheight-with-navbar'}>
