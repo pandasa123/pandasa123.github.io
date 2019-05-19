@@ -3,10 +3,6 @@ import WeatherSunnyIcon from 'mdi-react/WeatherSunnyIcon'
 import WeatherNightIcon from 'mdi-react/WeatherNightIcon'
 
 const NightLight = props => {
-  // useEffect(() => {
-  //   document.getElementById('switchRoundedSuccess').checked = props.theme
-  // }, [])
-
   const setToggle = e => {
     props.toggle(e.target.checked)
   }
