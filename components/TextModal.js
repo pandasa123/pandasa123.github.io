@@ -10,6 +10,8 @@ const TextModal = props => {
     document.getElementById(props.id).classList.remove('is-active')
   }
 
+  // style={{position: 'fixed', top: 0, bottom: 0}}
+
   return (
     <span>
       <a className="icon has-text-info" onClick={openModal} style={{position: 'relative', top: '2px'}}>
@@ -17,6 +19,8 @@ const TextModal = props => {
       </a>
       <br/>
       <div className="modal is-clipped" id={props.id}>
+        {/*<div onClick={closeModal} className="modal-background"*/}
+        {/*     style={{top: '0', bottom: '0', left: '0', right: '0', position: 'absolute'}}/>*/}
         <div className="modal-content">
           <article className="message is-info is-medium">
           <div className="message-header">

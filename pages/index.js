@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import '../styles/main.scss'
 
 import Hello from '../components/Hello'
@@ -10,23 +10,37 @@ import Experience from '../components/Experience'
 import Featured from '../components/Featured'
 import Projects from '../components/Projects'
 import ViewportHeader from '../components/ViewportHeader'
-import ThemeContext from '../utilities/ThemeContext'
-import getTheme from '../utilities/getTheme'
 
 const Index = () => {
+  const getTheme = () => {
+    let hour = new Date().getHours()
+    // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //   return true
+    // }
+    return (hour < 6 || hour > 19)
+  }
+
   const [useDarkMode, setDarkMode] = useState(getTheme())
+
+  // const [useBackground, setBackground] = useState(false)
+
+  useEffect(() => {
+    let darkMode = getTheme()
+    document.getElementById('switchRoundedSuccess').checked = darkMode
+    setDarkMode(darkMode)
+  }, [])
   return (
-    <ThemeContext.Provider value={{useDarkMode: useDarkMode, toggle: setDarkMode}}>
+    <div>
       <ViewportHeader/>
-      <Header/>
-      <Hello/>
-      <Background/>
-      <Skills/>
-      <Experience/>
-      <Featured/>
-      <Projects/>
-      <Footer/>
-    </ThemeContext.Provider>
+      <Header toggle={setDarkMode} theme={useDarkMode}/>
+      <Hello theme={useDarkMode}/>
+      <Background theme={useDarkMode}/>
+      <Skills theme={useDarkMode}/>
+      <Experience theme={useDarkMode}/>
+      <Featured theme={useDarkMode}/>
+      <Projects theme={useDarkMode}/>
+      <Footer theme={useDarkMode}/>
+    </div>
   )
 }
 

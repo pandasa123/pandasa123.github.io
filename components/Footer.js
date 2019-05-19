@@ -1,15 +1,14 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import MailIcon from 'mdi-react/MailIcon'
 import FacebookBoxIcon from 'mdi-react/FacebookBoxIcon'
 import LinkedinBoxIcon from 'mdi-react/LinkedinBoxIcon'
 import GithubCircleIcon from 'mdi-react/GithubCircleIcon'
-import ThemeContext from '../utilities/ThemeContext'
+
 
 const footerStyle = {backgroundColor: 'white', paddingBottom: '30px'}
-const Footer = () => {
-  const {useDarkMode} = useContext(ThemeContext)
+const Footer = props => {
   return (
-    <footer className={useDarkMode ? 'footer dark-footer' : 'footer'} style={footerStyle}>
+    <footer className={props.theme ? 'footer dark-footer' : 'footer'} style={footerStyle}>
       <div className="container">
         <div className="columns">
           <div className="column has-text-centered-mobile">

@@ -1,12 +1,10 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import Fade from 'react-reveal/Fade'
 import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
-import ThemeContext from '../utilities/ThemeContext'
 
-const Featured = () => {
-  const {useDarkMode} = useContext(ThemeContext)
+const Featured = props => {
   return (
-    <section className={useDarkMode ? 'hero is-medium is-dark' : 'hero is-medium'}>
+    <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
       <div className="hero-body">
         <div className="container">
           <Fade delayIn="800" duration={1200} distance="0px">

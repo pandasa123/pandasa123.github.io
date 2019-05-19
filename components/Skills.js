@@ -1,11 +1,9 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import Fade from 'react-reveal/Fade'
-import ThemeContext from '../utilities/ThemeContext'
 
-const Skills = () => {
-  const {useDarkMode} = useContext(ThemeContext)
+const Skills = props => {
   return (
-    <section className={useDarkMode ? 'hero is-medium is-dark' : 'hero is-medium'}>
+    <section className={props.theme ? 'hero is-medium is-dark' : 'hero is-medium'}>
       <div className="hero-body">
         <div className="container">
           <div className="columns is-1 is-size-5">

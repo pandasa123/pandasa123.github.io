@@ -1,11 +1,9 @@
-import React, {useContext} from 'react'
-import ThemeContext from '../utilities/ThemeContext'
+import React from 'react'
 
-const Hello = () => {
-  const {useDarkMode} = useContext(ThemeContext)
+const Hello = props => {
   return (
     <section
-      className={useDarkMode ? 'hero is-fullheight-with-navbar is-dark' : 'hero is-fullheight-with-navbar'}>
+      className={props.theme ? 'hero is-fullheight-with-navbar is-dark' : 'hero is-fullheight-with-navbar'}>
       <div className="hero-body">
         <div className="container">
           <h1 className="subtitle is-1">Hey there! <img className="emoji waving-hand"
