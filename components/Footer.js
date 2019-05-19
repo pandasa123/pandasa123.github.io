@@ -7,7 +7,7 @@ import ThemeContext from '../utilities/ThemeContext'
 
 const footerStyle = {backgroundColor: 'white', paddingBottom: '30px'}
 const Footer = () => {
-  const {useDarkMode} = useContext(ThemeContext)
+  let {useDarkMode} = useContext(ThemeContext)
   return (
     <footer className={useDarkMode ? 'footer dark-footer' : 'footer'} style={footerStyle}>
       <div className="container">

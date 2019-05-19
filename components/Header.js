@@ -4,7 +4,7 @@ import NightLight from './NightLight'
 import ThemeContext from '../utilities/ThemeContext'
 
 const Header = () => {
-  const {useDarkMode, toggle} = useContext(ThemeContext)
+  let {useDarkMode, toggle} = useContext(ThemeContext)
   console.log('fwfa ' + useDarkMode)
   return (
     <header>

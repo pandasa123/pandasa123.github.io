@@ -4,7 +4,7 @@ import OpenInNewIcon from 'mdi-react/OpenInNewIcon'
 import ThemeContext from '../utilities/ThemeContext'
 
 const Projects = () => {
-  const {useDarkMode} = useContext(ThemeContext)
+  let {useDarkMode} = useContext(ThemeContext)
   return (
     <section className={useDarkMode ? 'hero is-medium is-dark' : 'hero is-medium'}>
       <div className="hero-body">
