@@ -3,4 +3,4 @@ const getTheme = () => {
   return (hour < 6 || hour > 19)
 }
 
-export default getTheme()
+export default getTheme
