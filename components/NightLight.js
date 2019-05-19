@@ -3,6 +3,9 @@ import WeatherSunnyIcon from 'mdi-react/WeatherSunnyIcon'
 import WeatherNightIcon from 'mdi-react/WeatherNightIcon'
 
 const NightLight = props => {
+  // useEffect(() => {
+  //   document.getElementById('switchRoundedSuccess').checked = props.theme
+  // }, [])
 
   const setToggle = e => {
     props.toggle(e.target.checked)
@@ -15,7 +18,7 @@ const NightLight = props => {
           <WeatherSunnyIcon/>
         </span>
         <input id="switchRoundedSuccess" type="checkbox" name="switchRoundedSuccess"
-               className="switch is-rounded is-success" defaultChecked={props.theme} onClick={setToggle}/>
+               className="switch is-rounded is-success" onClick={setToggle}/>
         <label htmlFor="switchRoundedSuccess"/>
         <span className="icon" style={{position: 'relative', top: '6px'}}>
           <WeatherNightIcon/>

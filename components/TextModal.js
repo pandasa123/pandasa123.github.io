@@ -41,5 +41,5 @@ const TextModal = props => {
   )
 }
 
-
+export default TextModal
 
