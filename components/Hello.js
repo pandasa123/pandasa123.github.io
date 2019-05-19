@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import ThemeContext from '../utilities/ThemeContext'
 
 const Hello = () => {
-  let {useDarkMode} = useContext(ThemeContext)
+  const {useDarkMode} = useContext(ThemeContext)
   return (
     <section
       className={useDarkMode ? 'hero is-fullheight-with-navbar is-dark' : 'hero is-fullheight-with-navbar'}>

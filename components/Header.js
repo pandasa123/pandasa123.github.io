@@ -3,9 +3,8 @@ import '../styles/bulma-switch.scss'
 import NightLight from './NightLight'
 import ThemeContext from '../utilities/ThemeContext'
 
-const Header = props => {
-  let {useDarkMode} = useContext(ThemeContext)
-  const toggle = props.toggle
+const Header = () => {
+  const {useDarkMode, toggle} = useContext(ThemeContext)
   return (
     <header>
       <nav className={useDarkMode ? 'navbar is-transparent is-dark' : 'navbar is-transparent'} role="navigation"
