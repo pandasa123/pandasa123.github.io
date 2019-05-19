@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import WeatherSunnyIcon from 'mdi-react/WeatherSunnyIcon'
 import WeatherNightIcon from 'mdi-react/WeatherNightIcon'
 
@@ -7,6 +7,10 @@ const NightLight = props => {
     props.toggle(e.target.checked)
   }
 
+  useEffect(() => {
+    document.getElementById('switchRoundedSuccess').checked = props.theme
+  }, [props.theme])
+
   return (
     <div className={props.theme ? 'columns is-mobile is-dark has-text-white' : 'columns is-mobile'}>
       <div className="has-text-right column">
@@ -14,7 +18,7 @@ const NightLight = props => {
           <WeatherSunnyIcon/>
         </span>
         <input id="switchRoundedSuccess" type="checkbox" name="switchRoundedSuccess"
-               className="switch is-rounded is-success" onClick={setToggle} defaultChecked={props.theme}/>
+               className="switch is-rounded is-success" onClick={setToggle}/>
         <label htmlFor="switchRoundedSuccess"/>
         <span className="icon" style={{position: 'relative', top: '6px'}}>
           <WeatherNightIcon/>
