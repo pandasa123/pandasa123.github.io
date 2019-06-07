@@ -17,6 +17,7 @@ const Index = () => {
     // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     //   return true
     // }
+    console.log(hour)
     return (hour < 6 || hour > 19)
   }
 
