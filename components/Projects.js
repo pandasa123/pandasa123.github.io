@@ -16,7 +16,7 @@ const Projects = props => {
               </div>
 
               <div className="column is-5">
-                <strong>Sigma Stocks </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>Sigma Stocks </strong>
                 <a className="icon projectSet" href="https://github.com/bryce-s/SigmaStocks">
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
@@ -47,7 +47,7 @@ const Projects = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column is-5">
-                <strong>Prime Canvas </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>Prime Canvas </strong>
                 <a className="icon projectSet" href="https://github.com/pandasa123/primeCanvas">
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
@@ -77,7 +77,7 @@ const Projects = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column is-5">
-                <strong>Average Video Luminance </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>Average Video Luminance </strong>
                 <a className="icon projectSet" href="https://github.com/pandasa123/averageLuminance">
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
@@ -108,7 +108,7 @@ const Projects = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column is-5">
-                <strong>BlockDRM </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>BlockDRM </strong>
                 <a className="icon projectSet" href="https://github.com/pandasa123/BlockDRM">
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
@@ -138,7 +138,7 @@ const Projects = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column is-5">
-                <strong>Alexa Kids Word Trainer </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>Alexa Kids Word Trainer </strong>
                 <a className="icon projectSet" href="https://github.com/pandasa123/AlexaVowelTraining">
                   <OpenInNewIcon className="has-text-link"/>
                 </a>

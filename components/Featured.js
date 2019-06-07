@@ -18,7 +18,7 @@ const Featured = props => {
                   <img src="../static/MuseumCapture.jpg" alt="Museum Capture Diagram" id="museumCapture"/>
                 </a>
                 <div className="is-hidden-tablet">
-                  <strong>User Tracking using AWS Facial <q>Rekognition</q> and Kinesis </strong>
+                  <strong className={props.theme ? "has-text-white" : ""}>User Tracking using AWS Facial <q>Rekognition</q> and Kinesis </strong>
                   <a className="icon projectSet" href="https://github.com/pandasa123/VisitorDemographicsIPCamera">
                     <OpenInNewIcon className="has-text-link"/>
                   </a>
@@ -35,7 +35,7 @@ const Featured = props => {
                 </div>
               </div>
               <div className="column is-hidden-mobile">
-                <strong>User Tracking using AWS Facial <q>Rekognition</q> and Kinesis </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>User Tracking using AWS Facial <q>Rekognition</q> and Kinesis </strong>
                 <a className="icon projectSet" href="https://github.com/pandasa123/VisitorDemographicsIPCamera">
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
@@ -63,7 +63,7 @@ const Featured = props => {
                   <img src="../static/pam.jpg" alt="Hello PAM Demo" id="pam"/>
                 </a>
                 <div className="is-hidden-tablet">
-                  <strong>Hello PAM! </strong>
+                  <strong className={props.theme ? "has-text-white" : ""}>Hello PAM! </strong>
                   <a className="icon projectSet" href="https://github.com/pandasa123/Hello_PAM">
                     <OpenInNewIcon className="has-text-link"/>
                   </a>
@@ -78,7 +78,7 @@ const Featured = props => {
                 </div>
               </div>
               <div className="column is-hidden-mobile">
-                <strong>Hello PAM! </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>Hello PAM! </strong>
                 <a className="icon projectSet" href="https://github.com/pandasa123/Hello_PAM">
                   <OpenInNewIcon className="has-text-link"/>
                 </a>
@@ -104,7 +104,7 @@ const Featured = props => {
                   <img src="../static/PlayerHeatmap.jpg" alt="Player Heatmap Demo" id="playerHeatmap"/>
                 </a>
                 <div className="is-hidden-tablet">
-                  <strong>Women's Field Hockey Analytics Dashboard</strong>
+                  <strong className={props.theme ? "has-text-white" : ""}>Women's Field Hockey Analytics Dashboard</strong>
                   <br/><br/>
                   <span><img className="emoji"
                              src="../static/trophy.png"
@@ -118,7 +118,7 @@ const Featured = props => {
                 </div>
               </div>
               <div className="column is-hidden-mobile">
-                <strong>Women's Field Hockey Analytics Dashboard</strong>
+                <strong className={props.theme ? "has-text-white" : ""}>Women's Field Hockey Analytics Dashboard</strong>
                 <br/><br/>
                 <span><img className="emoji"
                            src="../static/trophy.png"

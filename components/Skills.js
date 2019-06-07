@@ -13,7 +13,7 @@ const Skills = props => {
                 <span className="has-text-info title is-size-4">MY SKILLS</span>
               </div>
               <div className="column is-2">
-                <strong className="shadow is-success">FRONTEND</strong>
+                <strong className={props.theme ? "shadow is-success has-text-white" : "shadow is-success"}>FRONTEND</strong>
                 <br/><br/>
                 <span>JavaScript</span>
                 <br/>
@@ -33,7 +33,7 @@ const Skills = props => {
             <div className="column is-hidden-tablet is-hidden-mobile"/>
             <Fade cascade delayIn="800" duration={1200} distance="0px">
               <div className="column is-2">
-                <strong className="shadow is-danger">BACKEND</strong>
+                <strong className={props.theme ? "shadow is-danger has-text-white" : "shadow is-danger"}>BACKEND</strong>
                 <br/><br/>
                 <span>Node.js</span>
                 <br/>
@@ -55,7 +55,7 @@ const Skills = props => {
             <div className="column is-hidden-tablet is-hidden-mobile"/>
             <Fade cascade delayIn="800" duration={1200} distance="0px">
               <div className="column is-2">
-                <strong className="shadow is-purple">CLOUD</strong>
+                <strong className={props.theme ? "shadow is-purple has-text-white" : "shadow is-purple"}>CLOUD</strong>
                 <br/>
                 <br/>
                 <span>AWS</span>

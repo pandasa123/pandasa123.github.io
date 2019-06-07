@@ -23,7 +23,7 @@ const Experience = props => {
               </div>
 
               <div className="column">
-                <strong>IBM Extreme Blue </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>IBM Extreme Blue </strong>
                 <span className="badgeSet">
                   <span className="button is-outlined is-rounded is-small is-success">FRONTEND</span>&nbsp;
                   <span className="button is-outlined is-rounded is-small is-purple">CLOUD</span>
@@ -55,7 +55,7 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>Citizen Schools </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>Citizen Schools </strong>
                 <span className="badgeSet">
                  <span className="button is-outlined is-rounded is-small is-success">FRONTEND</span>&nbsp;
                   <span className="button is-outlined is-rounded is-small is-purple">CLOUD</span>
@@ -85,7 +85,7 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>University of Michigan </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>University of Michigan </strong>
                 <span className="badgeSet">
                  <span className="button is-outlined is-rounded is-small is-success">FRONTEND</span>
                 </span>
@@ -114,7 +114,7 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>Diesel Labs </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>Diesel Labs </strong>
                 <br className="is-hidden-tablet"/>
                 <span className="badgeSet">
                  <span className="button is-outlined is-rounded is-small is-success">FRONTEND</span>&nbsp;
@@ -149,7 +149,7 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>Ramp.Digital </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>Ramp.Digital </strong>
                 <span className="badgeSet">
                  <span className="button is-outlined is-rounded is-small is-success">FRONTEND</span>&nbsp;
                   <span className="button is-outlined is-rounded is-small is-danger">BACKEND</span>
@@ -181,7 +181,7 @@ const Experience = props => {
             <div className="columns is-size-5">
               <div className="column is-4 is-hidden-mobile"/>
               <div className="column">
-                <strong>Sonorous </strong>
+                <strong className={props.theme ? "has-text-white" : ""}>Sonorous </strong>
                 <span className="badgeSet">
                   <span className="button is-outlined is-rounded is-small is-danger">BACKEND</span>
                 </span>

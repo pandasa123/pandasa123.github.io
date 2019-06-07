@@ -13,7 +13,7 @@ import ViewportHeader from '../components/ViewportHeader'
 
 const Index = () => {
   const getTheme = () => {
-    let hour = new Date().getHours()
+    const hour = new Date().getHours()
     // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     //   return true
     // }
@@ -24,11 +24,11 @@ const Index = () => {
   const [useDarkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
-    let darkMode = getTheme()
+    const darkMode = getTheme()
     document.getElementById('switchRoundedSuccess').checked = darkMode
     setDarkMode(darkMode)
   }, [])
-  
+
   return (
     <div>
       <ViewportHeader/>
