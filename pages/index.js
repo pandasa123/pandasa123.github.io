@@ -21,15 +21,14 @@ const Index = () => {
     return (hour < 6 || hour > 19)
   }
 
-  const [useDarkMode, setDarkMode] = useState(getTheme())
-
-  // const [useBackground, setBackground] = useState(false)
+  const [useDarkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
     let darkMode = getTheme()
     document.getElementById('switchRoundedSuccess').checked = darkMode
     setDarkMode(darkMode)
   }, [])
+  
   return (
     <div>
       <ViewportHeader/>
