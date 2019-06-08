@@ -23,11 +23,11 @@ const Index = () => {
 
   const [useDarkMode, setDarkMode] = useState(false)
 
-  useEffect(() => {
-    const darkMode = getTheme()
-    document.getElementById('switchRoundedSuccess').checked = darkMode
-    setDarkMode(darkMode)
-  }, [])
+  // useEffect(() => {
+  //   const darkMode = getTheme()
+  //   document.getElementById('switchRoundedSuccess').checked = darkMode
+  //   setDarkMode(darkMode)
+  // }, [])
 
   return (
     <div>
