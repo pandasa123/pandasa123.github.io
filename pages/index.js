@@ -12,6 +12,7 @@ import Projects from '../components/Projects'
 import ViewportHeader from '../components/ViewportHeader'
 
 const Index = () => {
+  console.log('v1.2')
   const getTheme = () => {
     const hour = new Date().getHours()
     // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -30,7 +31,7 @@ const Index = () => {
   // }, [])
 
   return (
-    <div>
+    <section>
       <ViewportHeader/>
       <Header toggle={setDarkMode} theme={useDarkMode}/>
       <Hello theme={useDarkMode}/>
@@ -40,7 +41,7 @@ const Index = () => {
       <Featured theme={useDarkMode}/>
       <Projects theme={useDarkMode}/>
       <Footer theme={useDarkMode}/>
-    </div>
+    </section>
   )
 }
 
