@@ -12,7 +12,6 @@ import Projects from '../components/Projects'
 import ViewportHeader from '../components/ViewportHeader'
 
 const Index = () => {
-  console.log('v1.2')
   const getTheme = () => {
     const hour = new Date().getHours()
     // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
