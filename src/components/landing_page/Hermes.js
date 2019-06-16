@@ -7,7 +7,7 @@ const Hermes = () => {
         <section className="bg-gray-100 pt-12 h-hero flex flex-col md:flex-row md:pt-8">
             <div className="text-center md:text-left md:pl-8 lg:pl-12">
                 <div className="pt-8">
-                    <img src={HermesIcon} className="block mx-auto md:mx-0 h-16 w-16"/>
+                    <img src={HermesIcon} className="block mx-auto md:mx-0 h-16 w-16" alt="Hermes Logo"/>
                 </div>
                 <div>
                     <h1 className="pt-5 text-gray-600 md:text-xl">Project Hermes</h1>
@@ -18,7 +18,8 @@ const Hermes = () => {
             </div>
             <div className="pt-12 block mx-auto md:flex md:mx-0 md:pt-0 md:mb-8">
                 <img src={HermesDemo}
-                     className="w-full md:pt-12 md:pl-2 md:mt-24 md:h-400px lg:pt-0 lg:mt-0 lg:block lg:h-500px xl:h-auto"/>
+                     className="w-full md:pt-12 md:pl-2 md:mt-24 md:h-400px lg:pt-0 lg:mt-0 lg:block lg:h-500px xl:h-auto"
+                     alt="Hermes Demo"/>
             </div>
         </section>
     )
