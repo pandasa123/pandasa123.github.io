@@ -23,7 +23,7 @@ const HeroNavigation = () => {
 
     return (
         <section
-            className="w-full text-xs h-10 border-t-2 border-gray-100 pt-2 flex flex-row justify-center md:justify-between">
+            className="w-full bg-white text-xs h-10 pt-2 flex flex-row justify-center md:justify-between">
             <span className="hidden md:inline-block lg:pl-4">
                 <a className="uppercase font-semibold pl-8" href="#">Hermes</a>
                 <a className="uppercase text-gray-400 pl-8" href="#">Ergonomics</a>
