@@ -1,8 +1,10 @@
 import React from 'react'
 // import Layout from '../components/layout'
 import SEO from '../components/seo'
-import HeroHeader from '../components/HeroHeader'
-import HeroNavigation from '../components/HeroNavigation'
+import HeroHeader from '../components/landing_page/HeroHeader'
+import HeroNavigation from '../components/landing_page/HeroNavigation'
+import Hermes from '../components/landing_page/Hermes'
+
 // import TypeIt from 'typeit'
 
 const IndexPage = () => {
@@ -22,6 +24,7 @@ const IndexPage = () => {
             />
             <HeroHeader/>
             <HeroNavigation/>
+            <Hermes/>
         </div>
 
         // <Layout>
