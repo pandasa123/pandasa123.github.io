@@ -6,16 +6,19 @@ const HeroHeader = () => {
     const projectClasses = classnames({
         'font-semibold': selected === 0,
         'text-gray-400': selected !== 0,
+        'hover:text-gray-600': selected !== 0,
     })
 
     const resumeClasses = classnames({
         'font-semibold': selected === 1,
         'text-gray-400': selected !== 1,
+        'hover:text-gray-600': selected !== 1,
     })
 
     const aboutClasses = classnames({
         'font-semibold': selected === 2,
         'text-gray-400': selected !== 2,
+        'hover:text-gray-600': selected !== 2,
     })
 
 
