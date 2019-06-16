@@ -4,7 +4,10 @@ module.exports = {
     theme: {
         extend: {
             spacing: {
-                hero: '90vh',
+                hero: '80vh',
+                72: '18rem',
+                '400px': '400px',
+                '500px': '500px',
             },
         },
     },
