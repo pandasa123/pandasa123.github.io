@@ -23,7 +23,7 @@ const HeroHeader = () => {
 
 
     return (
-        <section className="pl-5 pt-4 h-48 lg:h-56 xl:h-64 md:pl-8 lg:pl-12 border-b-2 border-gray-100">
+        <section className="pt-4 text-center h-48 md:text-left lg:h-56 xl:h-64 md:pl-8 lg:pl-12 border-b-2 border-gray-100">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl">
                 Hello! I'm Sanket!
             </h1>
