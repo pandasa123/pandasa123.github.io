@@ -4,6 +4,7 @@ const ProductCard = ({ title, description, image, linkTitle, link }) => {
 	return (
 		<div className={'w-full md:w-1/2 lg:w-1/3 px-3 flex flex-col mb-8'}>
 			<a
+				href="/"
 				className={
 					'no-underline bg-white rounded-lg shadow transition flex-1 flex flex-col overflow-hidden'
 				}
