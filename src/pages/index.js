@@ -1,6 +1,6 @@
 import React from 'react'
-// import Layout from '../components/layout'
-import SEO from '../components/seo'
+import SEO from '../components/SEO'
+import Header from '../components/Header'
 
 const IndexPage = () => {
     return (
@@ -9,6 +9,9 @@ const IndexPage = () => {
                 title="Home"
                 keywords={['gatsby', 'tailwind', 'react', 'tailwindcss']}
             />
+            <Header/>
+            <div className='bg-red-300 h-screen'></div>
+            <div className='bg-blue-300 h-screen'></div>
         </div>
     )
 }
