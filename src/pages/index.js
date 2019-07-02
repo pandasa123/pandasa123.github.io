@@ -2,7 +2,9 @@ import React from 'react'
 import SEO from '../components/SEO'
 import Header from '../components/Header'
 import LandingHero from '../components/landing/LandingHero'
+import FeaturedProjects from '../components/landing/FeaturedProjects'
 import 'typeface-roboto'
+import Footer from '../components/Footer';
 
 const globalStyle = {
 	fontFamily:
@@ -11,16 +13,16 @@ const globalStyle = {
 
 const IndexPage = () => {
 	return (
-		<div style={globalStyle}>
+		<div style={globalStyle} className={'bg-white'}>
 			<SEO
 				title="Home"
 				keywords={['gatsby', 'tailwind', 'react', 'tailwindcss']}
 			/>
 			<Header />
-			<div className="h-screen">
-				<LandingHero />
-			</div>
-			<div className="bg-blue-300 h-screen"></div>
+			<LandingHero />
+			<FeaturedProjects />
+            <Footer />
+			{/* <div className="bg-blue-300 h-screen"></div> */}
 		</div>
 	)
 }
