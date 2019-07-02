@@ -18,7 +18,7 @@ const FeaturedProjects = () => {
 				</h2>
 				<h2 className={'font-bold text-gray-500'}>View All</h2>
 			</div>
-			<div class="flex flex-wrap -mx-3">
+			<div className={'flex flex-wrap -mx-3'}>
 				<ProductCard
 					title={'IBM Hermes for Salesforce'}
 					description={
