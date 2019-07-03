@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const Header = () => {
 	const data = useStaticQuery(graphql`
@@ -36,10 +37,24 @@ const Header = () => {
 				alt="Contact Page"
 				fluid={data.profileImage.childImageSharp.fluid}
 			/>
-            <span className={'font-bold text-l pl-4 mt-1'}>
-				<h1 className={'text-blue-500 inline-block pr-4'}>Overview</h1>
-				<h1 className={'text-gray-300 inline-block pr-4'}>Projects</h1>
-				<h1 className={'text-gray-300 inline-block'}>Resume</h1>
+			<span className={'font-bold text-l pl-4 mt-1'}>
+				<AniLink
+					fade
+					to="/"
+					className={'text-blue-500 inline-block pr-4'}
+				>
+					Overview
+				</AniLink>
+				<AniLink
+					fade
+					to="/"
+					className={'text-gray-300 inline-block pr-4'}
+				>
+					Projects
+				</AniLink>
+				<AniLink fade to="/" className={'text-gray-300 inline-block'}>
+					Resume
+				</AniLink>
 			</span>
 		</section>
 	)

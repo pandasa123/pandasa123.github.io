@@ -25,7 +25,8 @@ module.exports = {
 				tailwind: true,
 				purgeOnly: ['src/css/style.css']
 			}
-		},
+        },
+        `gatsby-plugin-transition-link`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
 		{

@@ -15,8 +15,8 @@ const IndexPage = () => {
 	return (
 		<div style={globalStyle} className={'bg-white'}>
 			<SEO
-				title="Home"
-				keywords={['gatsby', 'tailwind', 'react', 'tailwindcss']}
+				title="Sanket Panda Portfolio"
+				keywords={['Sanket Panda', 'Sanket', 'Panda', 'Portfolio']}
 			/>
 			<Header />
 			<LandingHero />

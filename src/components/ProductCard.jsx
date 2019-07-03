@@ -1,10 +1,12 @@
 import React from 'react'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const ProductCard = ({ title, description, image, linkTitle, link }) => {
 	return (
 		<div className={'w-full md:w-1/2 lg:w-1/3 px-3 flex flex-col mb-8'}>
-			<a
-				href="/"
+			<AniLink
+				fade
+				to={link}
 				className={
 					'bg-white rounded-lg shadow transition flex-1 flex flex-col overflow-hidden'
 				}
@@ -20,7 +22,9 @@ const ProductCard = ({ title, description, image, linkTitle, link }) => {
 						{description}
 					</span>
 					<p className={'inline-flex items-center'}>
-						<span className={'text-xs text-blue-500 mr-2 sm:text-sm'}>
+						<span
+							className={'text-xs text-blue-500 mr-2 sm:text-sm'}
+						>
 							{linkTitle}
 						</span>
 						<svg
@@ -34,7 +38,7 @@ const ProductCard = ({ title, description, image, linkTitle, link }) => {
 						</svg>
 					</p>
 				</div>
-			</a>
+			</AniLink>
 		</div>
 	)
 }
