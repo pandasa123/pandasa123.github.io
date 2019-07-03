@@ -27,7 +27,7 @@ const Header = () => {
 	return (
 		<section
 			className={
-				'px-6 py-4 w-full h-16 align-middle flex flex-row fixed shadow-md bg-white'
+				'px-6 py-4 w-full h-16 flex flex-row fixed shadow-md bg-white'
 			}
 		>
 			<Img
@@ -36,7 +36,7 @@ const Header = () => {
 				alt="Contact Page"
 				fluid={data.profileImage.childImageSharp.fluid}
 			/>
-			<span className={'font-bold text-l pl-4 pt-1.2'}>
+            <span className={'font-bold text-l pl-4 mt-1'}>
 				<h1 className={'text-blue-500 inline-block pr-4'}>Overview</h1>
 				<h1 className={'text-gray-300 inline-block pr-4'}>Projects</h1>
 				<h1 className={'text-gray-300 inline-block'}>Resume</h1>
