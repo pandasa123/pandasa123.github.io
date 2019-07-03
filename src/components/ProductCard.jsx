@@ -6,21 +6,21 @@ const ProductCard = ({ title, description, image, linkTitle, link }) => {
 			<a
 				href="/"
 				className={
-					'no-underline bg-white rounded-lg shadow transition flex-1 flex flex-col overflow-hidden'
+					'bg-white rounded-lg shadow transition flex-1 flex flex-col overflow-hidden'
 				}
 			>
 				{/* <div>
 					<div className={'bg-cover aspect-16x9'}></div>
 				</div> */}
 				<div className={'p-6 flex-1 flex flex-col justify-between'}>
-					<h3 className={'text-md text-blue-700 no-underline mb-4'}>
+					<h3 className={'text-md text-blue-700 mb-4 sm:text-lg'}>
 						{title}
 					</h3>
-					<span className={'text-sm text-gray-600 mb-4'}>
+					<span className={'text-sm text-gray-600 mb-4 sm:text-md'}>
 						{description}
 					</span>
 					<p className={'inline-flex items-center'}>
-						<span className={'text-xs text-blue-500 mr-2'}>
+						<span className={'text-xs text-blue-500 mr-2 sm:text-sm'}>
 							{linkTitle}
 						</span>
 						<svg

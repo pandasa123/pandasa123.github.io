@@ -11,12 +11,12 @@ const FeaturedProjects = () => {
 			>
 				<h2
 					className={
-						'font-bold text-blue-500 pb-2 border-b-2 border-blue-500'
+						'font-bold text-md text-blue-500 pb-2 border-b-2 border-blue-500 sm:text-lg'
 					}
 				>
 					Featured Projects
 				</h2>
-				<h2 className={'font-bold text-gray-500'}>View All</h2>
+				<h2 className={'font-bold text-md text-gray-500 sm:text-lg'}>View All</h2>
 			</div>
 			<div className={'flex flex-wrap -mx-3'}>
 				<ProductCard
