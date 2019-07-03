@@ -22,7 +22,6 @@ const IndexPage = () => {
 			<LandingHero />
 			<FeaturedProjects />
             <Footer />
-			{/* <div className="bg-blue-300 h-screen"></div> */}
 		</div>
 	)
 }

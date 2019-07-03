@@ -33,6 +33,19 @@ module.exports = {
 			options: {
 				path: `${__dirname}/src/images/`
 			}
-		}
+		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Sanket Panda Portfolio`,
+				short_name: `SanketPanda`,
+				start_url: `/`,
+				background_color: `#FFFFFF`,
+				theme_color: `#4299E1`,
+                display: `standalone`,
+                icon: `src/images/favicon.png`
+			}
+        },
+        `gatsby-plugin-offline`
 	]
 }
