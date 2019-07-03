@@ -27,7 +27,7 @@ const Header = () => {
 	return (
 		<section
 			className={
-				'px-6 py-4 w-full h-16 flex flex-row fixed shadow-md bg-white'
+				'px-6 py-4 w-full h-16 flex flex-row fixed shadow-md bg-white md:px-8'
 			}
 		>
 			<Img

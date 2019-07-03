@@ -3,7 +3,7 @@ import React from 'react'
 const LandingHero = () => {
 	// h 36
 	return (
-		<section className={'pt-24 px-6 text-3xl font-bold text-gray-500 leading-snug sm:text-4xl md:text-5xl'}>
+		<section className={'pt-24 px-6 text-3xl font-bold text-gray-500 leading-snug sm:text-4xl md:text-5xl md:px-8'}>
 			<h1>Hi! I'm <strong className={'text-blue-500'}>Sanket Panda</strong>,</h1>
 			<br />
 			<h2><strong className={'text-blue-500'}>Technical Product Manager</strong></h2>

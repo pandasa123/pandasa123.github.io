@@ -3,7 +3,7 @@ import ProductCard from '../ProductCard'
 
 const FeaturedProjects = () => {
 	return (
-		<section className={'px-6 py-16'}>
+		<section className={'px-6 py-16 md:px-8'}>
 			<div
 				className={
 					'flex justify-between border-b-2 border-grey-light mb-10'
