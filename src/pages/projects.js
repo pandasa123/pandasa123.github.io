@@ -7,18 +7,18 @@ import FontStyle from '../components/FontStyle'
 import 'typeface-roboto'
 
 const ProjectsPage = () => {
-	return (
-		<section style={FontStyle} className={'bg-white'}>
-			<SEO
-				title="Sanket Panda Projects"
-				keywords={['Sanket Panda', 'Sanket', 'Panda', 'Projects']}
-			/>
-			<Header selected="Projects" />
-			<div className="h-screen"></div>
-			{/* <LandingHero /> */}
-			<Footer />
-		</section>
-	)
+    return (
+        <section style={FontStyle} className={'bg-white'}>
+            <SEO
+                title="Sanket Panda Projects"
+                keywords={['Sanket Panda', 'Sanket', 'Panda', 'Projects']}
+            />
+            <Header selected="Projects" />
+            <div className="h-screen"></div>
+            {/* <LandingHero /> */}
+            <Footer />
+        </section>
+    )
 }
 
 export default ProjectsPage

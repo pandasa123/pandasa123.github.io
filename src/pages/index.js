@@ -8,18 +8,18 @@ import FontStyle from '../components/FontStyle'
 import 'typeface-roboto'
 
 const IndexPage = () => {
-	return (
-		<div style={FontStyle} className={'bg-white'}>
-			<SEO
-				title="Sanket Panda Portfolio"
-				keywords={['Sanket Panda', 'Sanket', 'Panda', 'Portfolio']}
-			/>
-			<Header selected="Overview" />
-			<LandingHero />
-			<FeaturedProjects />
-			<Footer />
-		</div>
-	)
+    return (
+        <div style={FontStyle} className={'bg-white'}>
+            <SEO
+                title="Sanket Panda Portfolio"
+                keywords={['Sanket Panda', 'Sanket', 'Panda', 'Portfolio']}
+            />
+            <Header selected="Overview" />
+            <LandingHero />
+            <FeaturedProjects />
+            <Footer />
+        </div>
+    )
 }
 
 export default IndexPage

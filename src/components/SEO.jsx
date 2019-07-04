@@ -1,15 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import {graphql, StaticQuery} from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 
-const SEO = ({description, lang, meta, keywords, title}) => {
+const SEO = ({ description, lang, meta, keywords, title }) => {
     return (
         <StaticQuery
             query={detailsQuery}
             render={data => {
-                const metaDescription =
-                    description || data.site.siteMetadata.description
+                const metaDescription = description || data.site.siteMetadata.description
                 return (
                     <Helmet
                         htmlAttributes={{
@@ -54,9 +53,9 @@ const SEO = ({description, lang, meta, keywords, title}) => {
                             .concat(
                                 keywords.length > 0
                                     ? {
-                                        name: 'keywords',
-                                        content: keywords.join(', '),
-                                    }
+                                          name: 'keywords',
+                                          content: keywords.join(', '),
+                                      }
                                     : [],
                             )
                             .concat(meta)}
