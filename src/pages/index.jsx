@@ -1,6 +1,6 @@
 import React from 'react'
 import SEO from '../components/SEO'
-import Header from '../components/Header'
+import Navbar from '../components/Navbar'
 import LandingHero from '../components/landing/LandingHero'
 import FeaturedProjects from '../components/landing/FeaturedProjects'
 import Footer from '../components/Footer'
@@ -14,7 +14,7 @@ const IndexPage = () => {
 				title="Sanket Panda Portfolio"
 				keywords={['Sanket Panda', 'Sanket', 'Panda', 'Portfolio']}
 			/>
-			<Header selected="Overview"/>
+			<Navbar selected="Overview"/>
 			<LandingHero/>
 			<FeaturedProjects/>
 			<Footer/>

@@ -1,63 +1,11 @@
 import React from 'react'
 import ProductCard from '../ProductCard'
 import Container from '../Container'
-import { graphql, useStaticQuery } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import getFeaturedProjectImages from '../hooks/getFeaturedProjectImages'
 
 const FeaturedProjects = () => {
-	// noinspection Annotator
-	const data = useStaticQuery(graphql`
-        query {
-            hermesImage: file(relativePath: { eq: "ProductPages/Hermes.png" }) {
-                childImageSharp {
-                    fluid {
-                        base64
-                        tracedSVG
-                        aspectRatio
-                        src
-                        srcSet
-                        srcWebp
-                        srcSetWebp
-                        sizes
-                        originalImg
-                        originalName
-                    }
-                }
-            }
-            dieselLabs: file(relativePath: { eq: "ProductPages/DieselLabs.png" }) {
-                childImageSharp {
-                    fluid {
-                        base64
-                        tracedSVG
-                        aspectRatio
-                        src
-                        srcSet
-                        srcWebp
-                        srcSetWebp
-                        sizes
-                        originalImg
-                        originalName
-                    }
-                }
-            }
-            fabric: file(relativePath: { eq: "ProductPages/Fabric.png" }) {
-                childImageSharp {
-                    fluid {
-                        base64
-                        tracedSVG
-                        aspectRatio
-                        src
-                        srcSet
-                        srcWebp
-                        srcSetWebp
-                        sizes
-                        originalImg
-                        originalName
-                    }
-                }
-            }
-        }
-	`)
+	const { hermes, dieselLabs, fabric } = getFeaturedProjectImages()
 
 	return (
 		<Container classes="py-16">
@@ -69,7 +17,11 @@ const FeaturedProjects = () => {
 				>
 					Featured Projects
 				</h2>
-				<AniLink fade to="/projects" className={'font-bold text-md text-gray-500 sm:text-lg'}>
+				<AniLink
+					fade
+					to="/projects"
+					className={'font-bold text-md text-gray-500 sm:text-lg'}
+				>
 					View All
 				</AniLink>
 			</div>
@@ -79,7 +31,7 @@ const FeaturedProjects = () => {
 					description={
 						'Hermes enhances the Salesforce Support Agent experience with Idle Auto Logout and Enchanced Desktop Notifications!'
 					}
-					image={data.hermesImage.childImageSharp.fluid}
+					image={hermes}
 					linkTitle={'Learn More'}
 					link="/"
 				/>
@@ -88,7 +40,7 @@ const FeaturedProjects = () => {
 					description={
 						'With Diesel Labs’ huge data pipeline, my T-SNE Visualisation helped new clients understand how data was connected and how it could help them'
 					}
-					image={data.dieselLabs.childImageSharp.fluid}
+					image={dieselLabs}
 					linkTitle={'Learn More'}
 					link="/"
 				/>
@@ -97,7 +49,7 @@ const FeaturedProjects = () => {
 					description={
 						'Microsoft Fabric UI library to build Fluent experiences. I refactored developer examples to create an easier adoption process'
 					}
-					image={data.fabric.childImageSharp.fluid}
+					image={fabric}
 					linkTitle={'Learn More'}
 					link="/"
 				/>
