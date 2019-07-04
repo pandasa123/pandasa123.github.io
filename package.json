@@ -38,6 +38,7 @@
         "analyze": "npm run analyze:lint && npm run analyze:prettier",
         "build": "gatsby build",
         "develop": "gatsby develop",
+        "deploy": "npm run build && npm run serve",
         "fix:lint": "eslint --ext .jsx --ext .js --ext .tsx --ext .ts . --fix",
         "fix:prettier": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json}",
         "fix": "npm run fix:lint && npm run fix:prettier",

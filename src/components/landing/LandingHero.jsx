@@ -3,7 +3,7 @@ import Container from '../Container'
 
 const LandingHero = () => {
     return (
-        <Container classes="pt-24 text-3xl font-bold text-gray-500 leading-snug sm:text-4xl md:pt-32 md:text-5xl">
+        <Container classes="pt-24 text-3xl font-bold text-gray-500 leading-snug sm:text-4xl md:pt-28 md:text-5xl lg:pt-32">
             <h1>
                 Hi! I'm <strong className={'text-blue-500'}>Sanket Panda</strong>,
             </h1>

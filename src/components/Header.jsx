@@ -28,12 +28,14 @@ const Header = ({ selected }) => {
 
     return (
         <Container classes={'py-4 w-full h-16 flex flex-row fixed shadow-md bg-white'}>
-            <Img
-                className={'w-8 block'}
-                title="Contact Page"
-                alt="Contact Page"
-                fluid={data.profileImage.childImageSharp.fluid}
-            />
+            <AniLink fade to='/'>
+                <Img
+                    className={'w-8 block'}
+                    title="Contact Page"
+                    alt="Contact Page"
+                    fluid={data.profileImage.childImageSharp.fluid}
+                />
+            </AniLink>
             <span className={'font-bold text-l pl-4 mt-1'}>
                 <AniLink
                     fade
