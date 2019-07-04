@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-const Header = () => {
+const Header = ({ selected }) => {
 	const data = useStaticQuery(graphql`
 		query {
 			profileImage: file(relativePath: { eq: "Profile.png" }) {
@@ -41,18 +41,34 @@ const Header = () => {
 				<AniLink
 					fade
 					to="/"
-					className={'text-blue-500 inline-block pr-4'}
+					className={
+						selected === 'Overview'
+							? 'text-blue-500 inline-block pr-4'
+							: 'text-gray-300 inline-block pr-4'
+					}
 				>
 					Overview
 				</AniLink>
 				<AniLink
 					fade
-					to="/"
-					className={'text-gray-300 inline-block pr-4'}
+					to="/projects"
+					className={
+						selected === 'Projects'
+							? 'text-blue-500 inline-block pr-4'
+							: 'text-gray-300 inline-block pr-4'
+					}
 				>
 					Projects
 				</AniLink>
-				<AniLink fade to="/" className={'text-gray-300 inline-block'}>
+				<AniLink
+					fade
+					to="/"
+					className={
+						selected === 'Resume'
+							? 'text-blue-500 inline-block'
+							: 'text-gray-300 inline-block'
+					}
+				>
 					Resume
 				</AniLink>
 			</span>

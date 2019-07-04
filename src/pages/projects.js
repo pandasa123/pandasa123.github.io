@@ -1,8 +1,7 @@
 import React from 'react'
 import SEO from '../components/SEO'
 import Header from '../components/Header'
-import LandingHero from '../components/landing/LandingHero'
-import FeaturedProjects from '../components/landing/FeaturedProjects'
+// import LandingHero from '../components/landing/LandingHero'
 import Footer from '../components/Footer'
 import 'typeface-roboto'
 
@@ -11,19 +10,19 @@ const globalStyle = {
 		'Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
 }
 
-const IndexPage = () => {
+const ProjectsPage = () => {
 	return (
 		<div style={globalStyle} className={'bg-white'}>
 			<SEO
-				title="Sanket Panda Portfolio"
-				keywords={['Sanket Panda', 'Sanket', 'Panda', 'Portfolio']}
+				title="Sanket Panda Projects"
+				keywords={['Sanket Panda', 'Sanket', 'Panda', 'Projects']}
 			/>
-			<Header selected='Overview' />
-			<LandingHero />
-			<FeaturedProjects />
-			<Footer />
+			<Header selected='Projects' />
+            <div className='h-screen'></div>
+			{/* <LandingHero /> */}
+            <Footer />
 		</div>
 	)
 }
 
-export default IndexPage
+export default ProjectsPage
