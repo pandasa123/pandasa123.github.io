@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import LandingHero from '../components/landing/LandingHero'
 import FeaturedProjects from '../components/landing/FeaturedProjects'
 import Footer from '../components/Footer'
-import FontStyle from '../components/FontStyle'
+import FontStyle from '../components/utils/FontStyle'
 import 'typeface-roboto'
 
 const IndexPage = () => {
