@@ -69,7 +69,7 @@ const FeaturedProjects = () => {
 				>
 					Featured Projects
 				</h2>
-				<AniLink fade to="/" className={'font-bold text-md text-gray-500 sm:text-lg'}>
+				<AniLink fade to="/projects" className={'font-bold text-md text-gray-500 sm:text-lg'}>
 					View All
 				</AniLink>
 			</div>
