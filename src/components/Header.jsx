@@ -2,6 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import Container from './Container'
 
 const Header = ({ selected }) => {
 	const data = useStaticQuery(graphql`
@@ -26,10 +27,8 @@ const Header = ({ selected }) => {
 	`)
 
 	return (
-		<section
-			className={
-				'px-6 py-4 w-full h-16 flex flex-row fixed shadow-md bg-white md:px-8'
-			}
+		<Container
+			classes={'py-4 w-full h-16 flex flex-row fixed shadow-md bg-white'}
 		>
 			<Img
 				className={'w-8 block'}
@@ -72,7 +71,7 @@ const Header = ({ selected }) => {
 					Resume
 				</AniLink>
 			</span>
-		</section>
+		</Container>
 	)
 }
 

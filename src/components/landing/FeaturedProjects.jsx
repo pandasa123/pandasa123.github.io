@@ -1,10 +1,11 @@
 import React from 'react'
 import ProductCard from '../ProductCard'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import Container from '../Container'
 
 const FeaturedProjects = () => {
 	return (
-		<section className={'px-6 py-16 md:px-8'}>
+		<Container classes="py-16">
 			<div
 				className={
 					'flex justify-between border-b-2 border-grey-light mb-10'
@@ -51,7 +52,7 @@ const FeaturedProjects = () => {
 					link="/"
 				/>
 			</div>
-		</section>
+		</Container>
 	)
 }
 
