@@ -82,6 +82,7 @@ SEO.propTypes = {
 
 export default SEO
 
+// noinspection Annotator
 const detailsQuery = graphql`
     query DefaultSEOQuery {
         site {

@@ -14,7 +14,7 @@ const ProjectsPage = () => {
 				keywords={['Sanket Panda', 'Sanket', 'Panda', 'Projects']}
 			/>
 			<Header selected="Projects"/>
-			<div className="h-screen"></div>
+			<div className="h-screen"/>
 			{/* <LandingHero /> */}
 			<Footer/>
 		</section>

@@ -5,6 +5,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Container from './Container'
 
 const Header = ({ selected }) => {
+	// noinspection Annotator
 	const data = useStaticQuery(graphql`
         query {
             profileImage: file(relativePath: { eq: "Profile.png" }) {

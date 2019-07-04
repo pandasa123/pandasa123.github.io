@@ -10,6 +10,7 @@
  * @import "tailwindcss/base";
  */
 
+/*noinspection ALL*/
 @tailwind base;
 /**
  * This injects any component classes registered by plugins.
@@ -19,6 +20,7 @@
  * @import "tailwindcss/components";
  */
 
+/*noinspection CssInvalidAtRule,CssInvalidAtRule*/
 @tailwind components;
 /**
  * Here you would add any of your custom component classes; stuff that you'd
@@ -45,6 +47,7 @@
  * @import "tailwindcss/utilities";
  */
 
+/*noinspection CssInvalidAtRule*/
 @tailwind utilities;
 /**
  * Here you would add any custom utilities you need that don't come out of the
