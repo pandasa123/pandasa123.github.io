@@ -4,21 +4,17 @@ import Header from '../components/Header'
 import LandingHero from '../components/landing/LandingHero'
 import FeaturedProjects from '../components/landing/FeaturedProjects'
 import Footer from '../components/Footer'
+import FontStyle from '../components/FontStyle'
 import 'typeface-roboto'
-
-const globalStyle = {
-	fontFamily:
-		'Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
-}
 
 const IndexPage = () => {
 	return (
-		<div style={globalStyle} className={'bg-white'}>
+		<div style={FontStyle} className={'bg-white'}>
 			<SEO
 				title="Sanket Panda Portfolio"
 				keywords={['Sanket Panda', 'Sanket', 'Panda', 'Portfolio']}
 			/>
-			<Header selected='Overview' />
+			<Header selected="Overview" />
 			<LandingHero />
 			<FeaturedProjects />
 			<Footer />
