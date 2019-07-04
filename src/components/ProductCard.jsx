@@ -8,12 +8,13 @@ const ProductCard = ({ title, description, image, linkTitle, link }) => {
 				fade
 				to={link}
 				className={
-					'bg-white rounded-lg shadow transition flex-1 flex flex-col overflow-hidden'
+					'bg-white rounded-lg shadow-md transition flex-1 flex flex-col overflow-hidden'
 				}
 			>
-				{/* <div>
-					<div className={'bg-cover aspect-16x9'}></div>
-				</div> */}
+				{/* <img
+					className={'bg-cover aspect-16x9'}
+					src={'https://pbs.twimg.com/media/DHXLem8WAAIFboe.jpg'}
+				></img> */}
 				<div className={'p-6 flex-1 flex flex-col justify-between'}>
 					<h3 className={'text-md text-blue-700 mb-4 sm:text-lg'}>
 						{title}
