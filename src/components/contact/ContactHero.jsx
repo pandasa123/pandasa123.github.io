@@ -20,11 +20,11 @@ const ContactHero = () => {
 			</h1>
 			<br/>
 			<h2>
-				Checkout my Github <strong className={'text-blue-500'}>@pandasa123</strong>
+				Checkout my Github <strong className={'text-blue-500'}>@pandasa123</strong>,
 			</h2>
 			<br/>
 			<h2>
-				Connect with me <strong className={'text-blue-500'}>/in/sanketpanda</strong>
+				Connect with me <strong className={'text-blue-500'}>/in/sanketpanda</strong>,
 			</h2>
 			<br/>
 			<h2>
