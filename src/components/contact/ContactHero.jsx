@@ -15,21 +15,29 @@ const ContactHero = () => {
 			{/*	alt="Profile Image"*/}
 			{/*	fluid={profileImage}*/}
 			{/*/>*/}
-			<h1 className={'pt-8'}>
-				Send me an email <strong className={'text-blue-500'}>pandasa@umich</strong>,
-			</h1>
+			<a href={'mailto:pandasa@umich.edu'}>
+				<h1 className={'pt-8'}>
+					Send me an email <strong className={'text-blue-500'}>pandasa@umich</strong>,
+				</h1>
+			</a>
 			<br/>
-			<h2>
-				Checkout my Github <strong className={'text-blue-500'}>@pandasa123</strong>,
-			</h2>
+			<a href={'https://github.com/pandasa123'}>
+				<h2>
+					Checkout my Github <strong className={'text-blue-500'}>@pandasa123</strong>,
+				</h2>
+			</a>
 			<br/>
-			<h2>
-				Connect with me <strong className={'text-blue-500'}>/in/sanketpanda</strong>,
-			</h2>
+			<a href={'https://linkedin.com/in/sanketpanda/'}>
+				<h2>
+					Connect with me <strong className={'text-blue-500'}>/in/sanketpanda</strong>,
+				</h2>
+			</a>
 			<br/>
-			<h2>
-				And save my <strong className={'text-blue-500'}>Resume</strong>
-			</h2>
+			<a href={'https://sanket-panda-resume.s3.amazonaws.com/SanketPandaResume.pdf'}>
+				<h2>
+					And save my <strong className={'text-blue-500'}>Resume</strong>
+				</h2>
+			</a>
 		</Container>
 	)
 }
