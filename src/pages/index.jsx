@@ -12,7 +12,7 @@ const IndexPage = () => {
 		<div style={FontStyle} className={'bg-white'}>
 			<SEO
 				title="Sanket Panda Portfolio"
-				keywords={['Sanket Panda', 'Sanket', 'Panda', 'Portfolio']}
+				keywords={['Sanket Panda Portfolio', 'Sanket Panda', 'Sanket', 'Panda', 'Portfolio']}
 			/>
 			<Navbar selected="Overview"/>
 			<LandingHero/>

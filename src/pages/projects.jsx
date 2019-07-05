@@ -11,7 +11,7 @@ const ProjectsPage = () => {
 		<section style={FontStyle} className={'bg-white'}>
 			<SEO
 				title="Sanket Panda Projects"
-				keywords={['Sanket Panda', 'Sanket', 'Panda', 'Projects']}
+				keywords={['Sanket Panda Projects', 'Sanket', 'Panda', 'Projects']}
 			/>
 			<Navbar selected="Projects"/>
 			<div className="h-screen"/>

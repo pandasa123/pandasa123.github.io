@@ -7,7 +7,7 @@ const getNavigationImage = () => {
             query profileImage {
                 profileImage: file(relativePath: { eq: "Profile.png" }) {
                     childImageSharp {
-                        fluid(maxWidth: 32) {
+                        fluid {
                             ...GatsbyImageSharpFluid
                         }
                     }
