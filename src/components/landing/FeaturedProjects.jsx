@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
 				</h2>
 				<AniLink
 					fade
-					to="/projects"
+					to="/projects/"
 					className={'font-bold text-md text-gray-500 sm:text-lg'}
 				>
 					View All

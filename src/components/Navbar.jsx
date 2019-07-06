@@ -9,7 +9,7 @@ const Navbar = ({ selected }) => {
 
 	return (
 		<Container classes={'py-4 w-full h-16 flex flex-row fixed shadow-md bg-white z-50'}>
-			<AniLink fade to="/contact">
+			<AniLink fade to="/contact/">
 				<Img
 					className={'w-8 block'}
 					title="Contact Page"
@@ -31,7 +31,7 @@ const Navbar = ({ selected }) => {
 				</AniLink>
 				<AniLink
 					fade
-					to="/projects"
+					to="/projects/"
 					className={
 						selected === 'Projects'
 							? 'text-blue-500 inline-block pr-4'
