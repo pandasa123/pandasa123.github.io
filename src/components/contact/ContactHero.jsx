@@ -35,7 +35,7 @@ const ContactHero = () => {
 			<br/>
 			<a href={'https://sanket-panda-resume.s3.amazonaws.com/SanketPandaResume.pdf'}>
 				<h2>
-					And save my <strong className={'text-blue-500'}>Resume</strong>
+					And save my <strong className={'text-blue-500'}>resume</strong>
 				</h2>
 			</a>
 		</Container>

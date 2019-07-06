@@ -1,6 +1,6 @@
 # On the site [![Build Status](https://travis-ci.com/pandasa123/pandasa123.github.io.svg?branch=master)](https://travis-ci.com/pandasa123/pandasa123.github.io)
 
-Built using Gatsby and TailwindCSS, this is a responsive (hopefully) PWA / AMP site with a contextually aware dark mode based on time. Experimenting with React Hooks, UI/UX, AWS etc
+Built using Gatsby and TailwindCSS, this is a responsive PWA site with a contextually aware dark mode based on time. Experimenting with React Hooks, UI/UX, AWS etc
 
 ## Running
 
