@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import ProductCard from '../ProductCard'
 import Container from '../Container'
 
-const FOSS = () => {
+const FOSS = ({ fabric, reactSVG }) => {
 	return (
 		<Fragment>
 			<Container classes="pt-6 pb-4 text-lg font-bold text-gray-700 leading-snug sm:text-xl">
@@ -14,7 +14,7 @@ const FOSS = () => {
 					description={
 						'Microsoft Fabric UI library to build Fluent experiences. I refactored developer examples to create an easier adoption process'
 					}
-					// image={fabric}
+					image={fabric}
 					linkTitle={'Learn More'}
 					link="/"
 				/>
@@ -23,7 +23,7 @@ const FOSS = () => {
 					description={
 						'Beautiful SVG loaders wrapped into React components. I rewrote the entire library, reducing the size by 37% and added CI/CD, linting, etc'
 					}
-					// image={reactSVG}
+					image={reactSVG}
 					linkTitle={'Learn More'}
 					link="/"
 				/>
