@@ -35,6 +35,7 @@ const ProjectsPage = () => {
 			<Commercial hermes={hermes} dieselLabs={dieselLabs} umViz={umViz}/>
 			<FOSS fabric={fabric} reactSVG={reactSVG}/>
 			<Personal helloPAM={helloPAM} msas={msas} museumDemo={museumDemo}/>
+            <br/>
 			<Footer/>
 		</section>
 	)
