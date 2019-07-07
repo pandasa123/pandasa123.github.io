@@ -42,7 +42,7 @@ const Navbar = ({ selected }) => {
 				</AniLink>
 				<AniLink
 					fade
-					to="/"
+					to="/resume/"
 					className={
 						selected === 'Resume'
 							? 'text-blue-500 inline-block'
