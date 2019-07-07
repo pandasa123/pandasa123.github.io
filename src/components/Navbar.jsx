@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Img from 'gatsby-image'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import classNames from 'classnames'
 import Container from './Container'
+import ThemeContext from './utils/ThemeContext'
 import getNavigationImage from './hooks/getNavigationImage'
 
 const Navbar = ({ selected }) => {
 	const navImage = getNavigationImage()
+	const theme = useContext(ThemeContext)
+
+	const containerClasses = classNames({
+		'py-4': true,
+		'w-full': true,
+		'h-16': true,
+		'flex': true,
+		'flex-row': true,
+		'fixed': true,
+		'shadow-md': true,
+		'z-50': true,
+		'bg-white': theme === 'light',
+		'bg-gray-700': theme === 'dark',
+	})
 
 	return (
-		<Container classes={'py-4 w-full h-16 flex flex-row fixed shadow-md bg-white z-50'}>
+		<Container classes={containerClasses}>
 			<AniLink fade to="/contact/">
 				<Img
 					className={'w-8 block'}
