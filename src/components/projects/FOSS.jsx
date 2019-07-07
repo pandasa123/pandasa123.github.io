@@ -1,11 +1,31 @@
-import React, { Fragment } from 'react'
+import React, { useContext } from 'react'
 import ProductCard from '../ProductCard'
 import Container from '../Container'
+import ThemeContext from '../utils/ThemeContext'
+import classNames from 'classnames'
 
 const FOSS = ({ fabric, reactSVG }) => {
+	const theme = useContext(ThemeContext)
+
+	const containerClasses = classNames({
+		'bg-white': theme === 'light',
+		'bg-gray-800': theme === 'dark',
+	})
+
+	const headerClasses = classNames({
+		'pt-6': true,
+		'pb-4': true,
+		'sm:text-xl': true,
+		'text-lg': true,
+		'font-bold': true,
+		'leading-snug': true,
+		'text-gray-700': theme === 'light',
+		'text-gray-500': theme === 'dark',
+	})
+
 	return (
-		<Fragment>
-			<Container classes="pt-6 pb-4 text-lg font-bold text-gray-700 leading-snug sm:text-xl">
+		<div className={containerClasses}>
+			<Container classes={headerClasses}>
 				<h2>Free Open-Source Contributions</h2>
 			</Container>
 			<Container classes={'flex flex-wrap -mx-3'}>
@@ -28,7 +48,7 @@ const FOSS = ({ fabric, reactSVG }) => {
 					link="/"
 				/>
 			</Container>
-		</Fragment>
+		</div>
 	)
 }
 

@@ -1,14 +1,31 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Container from '../Container'
+import ThemeContext from '../utils/ThemeContext'
+import classNames from 'classnames'
 // import Img from 'gatsby-image'
 // import getNavigationImage from '../hooks/getNavigationImage'
 
 const ContactHero = () => {
 	// const profileImage = getNavigationImage()
 
+	const theme = useContext(ThemeContext)
+
+	const containerClasses = classNames({
+		'pt-24': true,
+		'md:pt-28': true,
+		'lg:pt-32': true,
+		'text-3xl': true,
+		'sm:text-4xl': true,
+		'md:text-5xl': true,
+		'leading-snug': true,
+		'font-bold': true,
+		'text-gray-500': true,
+		'bg-white': theme === 'light',
+		'bg-gray-800': theme === 'dark',
+	})
+
 	return (
-		<Container
-			classes="pt-24 text-3xl font-bold text-gray-500 leading-snug sm:text-4xl md:pt-28 md:text-5xl lg:pt-32">
+		<Container classes={containerClasses}>
 			{/*<Img*/}
 			{/*	className={'w-32 mx-auto md:w-48'}*/}
 			{/*	title="Profile Image"*/}

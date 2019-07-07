@@ -7,12 +7,20 @@ import ContactHero from '../components/contact/ContactHero'
 import Footer from '../components/Footer'
 import { ThemeProvider } from '../components/utils/ThemeContext'
 import TimeTheme from '../components/utils/TimeTheme'
+import classNames from 'classnames'
 
 const ContactPage = () => {
 	const [theme] = useState(TimeTheme)
+
+	const containerClasses = classNames({
+		'h-screen': true,
+		'bg-white': theme === 'light',
+		'bg-gray-800': theme === 'dark',
+	})
+
 	return (
 		<ThemeProvider value={theme}>
-			<div style={FontStyle} className={'bg-white h-screen'}>
+			<div style={FontStyle} className={containerClasses}>
 				<SEO
 					title={'Sanket Panda Contact'}
 					keywords={['Sanket Panda Contact', 'Sanket', 'Panda', 'Contact']}

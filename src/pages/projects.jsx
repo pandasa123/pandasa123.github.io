@@ -11,6 +11,7 @@ import Personal from '../components/projects/Personal'
 import getAllProjects from '../components/hooks/getAllProjects'
 import { ThemeProvider } from '../components/utils/ThemeContext'
 import TimeTheme from '../components/utils/TimeTheme'
+import classNames from 'classnames'
 
 const ProjectsPage = () => {
 	const {
@@ -26,9 +27,14 @@ const ProjectsPage = () => {
 
 	const [theme] = useState(TimeTheme)
 
+	const containerClasses = classNames({
+		'bg-white': theme === 'light',
+		'bg-gray-800': theme === 'dark',
+	})
+
 	return (
 		<ThemeProvider value={theme}>
-			<section style={FontStyle} className={'bg-white'}>
+			<section style={FontStyle} className={containerClasses}>
 				<SEO
 					title="Sanket Panda Projects"
 					keywords={['Sanket Panda Projects', 'Sanket', 'Panda', 'Projects']}

@@ -1,21 +1,46 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Img from 'gatsby-image'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import ThemeContext from './utils/ThemeContext'
+import classNames from 'classnames'
 
 const ProductCard = ({ title, description, image, linkTitle, link }) => {
+	const theme = useContext(ThemeContext)
+	const cardClasses = classNames({
+		'flex': true,
+		'flex-1': true,
+		'flex-col': true,
+		'rounded-lg': true,
+		'shadow-md': true,
+		'transition': true,
+		'overflow-hidden': true,
+		'bg-white': theme === 'light',
+		'bg-gray-700': theme === 'dark',
+	})
+
+	const cardHeaderClasses = classNames({
+		'mb-4': true,
+		'text-md': true,
+		'sm:text-lg': true,
+		'text-blue-700': theme === 'light',
+		'text-blue-400': theme === 'dark',
+	})
+
+	const cardDescriptionClasses = classNames({
+		'mb-4': true,
+		'text-sm': true,
+		'sm:text-md': true,
+		'text-gray-600': theme === 'light',
+		'text-gray-400': theme === 'dark',
+	})
+
 	return (
 		<div className={'w-full md:w-1/2 lg:w-1/3 px-3 flex flex-col mb-8'}>
-			<AniLink
-				fade
-				to={link}
-				className={
-					'bg-white rounded-lg shadow-md transition flex-1 flex flex-col overflow-hidden'
-				}
-			>
+			<AniLink fade to={link} className={cardClasses}>
 				<Img fluid={{ ...image }} alt={title} objectFit="cover"/>
 				<div className={'p-6 flex-1 flex flex-col justify-between'}>
-					<h3 className={'text-md text-blue-700 mb-4 sm:text-lg'}>{title}</h3>
-					<span className={'text-sm text-gray-600 mb-4 sm:text-md'}>{description}</span>
+					<h3 className={cardHeaderClasses}>{title}</h3>
+					<span className={cardDescriptionClasses}>{description}</span>
 					{/*<p className={'inline-flex items-center'}>*/}
 					{/*	<span className={'text-xs text-blue-500 mr-2 sm:text-sm'}>{linkTitle}</span>*/}
 					{/*	<svg*/}

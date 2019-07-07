@@ -1,20 +1,52 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import ThemeContext from './ThemeContext'
+import classNames from 'classnames'
 
 const ParagraphEmphasis = props => {
-	return <strong className={'text-blue-800 font-semibold'}>{props.children}</strong>
+	const theme = useContext(ThemeContext)
+	const emphasisClasses = classNames({
+		'font-semibold': true,
+		'text-blue-800': theme === 'light',
+		'text-blue-600': theme === 'dark',
+	})
+	return <strong className={emphasisClasses}>{props.children}</strong>
 }
 
 const Paragraph = props => {
-	return <p className={'pt-1 text-md font-light text-gray-800 md:text-lg'}>{props.children}</p>
+	const theme = useContext(ThemeContext)
+	const paragraphClasses = classNames({
+		'pt-1': true,
+		'text-md': true,
+		'md:text-lg': true,
+		'font-light': true,
+		'text-gray-800': theme === 'light',
+		'text-gray-400': theme === 'dark',
+	})
+	return <p className={paragraphClasses}>{props.children}</p>
 }
 
 const Date = props => {
-	return <h4 className={'pt-1 text-sm text-gray-600 md:text-md'}>{props.children}</h4>
+	const theme = useContext(ThemeContext)
+	const dateClasses = classNames({
+		'pt-1': true,
+		'text-sm': true,
+		'md:text-md': true,
+		'text-gray-600': theme === 'light',
+		'text-gray-400': theme === 'dark',
+	})
+	return <h4 className={dateClasses}>{props.children}</h4>
 }
 
 const Position = ({ company, position }) => {
+	const theme = useContext(ThemeContext)
+	const positionClasses = classNames({
+		'text-xl': true,
+		'md:text-2xl': true,
+		'text-gray-500': theme === 'light',
+		'text-gray-400': theme === 'dark',
+	})
 	return (
-		<h3 className={'text-xl text-gray-500 md:text-2xl'}>
+		<h3 className={positionClasses}>
 			<strong className={'text-blue-500'}>{company}</strong>: {position}
 		</h3>
 	)
