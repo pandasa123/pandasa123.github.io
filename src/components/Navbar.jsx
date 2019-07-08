@@ -14,9 +14,9 @@ const Navbar = ({ selected, setTheme }) => {
 		'py-4': true,
 		'w-full': true,
 		'h-16': true,
-		flex: true,
+		'flex': true,
 		'flex-row': true,
-		fixed: true,
+		'fixed': true,
 		'shadow-md': true,
 		'z-50': true,
 		'bg-white': theme === 'light',
@@ -25,7 +25,7 @@ const Navbar = ({ selected, setTheme }) => {
 
 	const navImageClasses = classNames({
 		'w-8': true,
-		block: true,
+		'block': true,
 		'rounded-full': true,
 		'border-2': true,
 		'border-indigo-600': theme === 'light',
@@ -57,10 +57,10 @@ const Navbar = ({ selected, setTheme }) => {
 
 	const themeChange = () => {
 		if (theme === 'light') {
-			sessionStorage.setItem('theme', 'dark')
+			window.sessionStorage.setItem('theme', 'dark')
 			setTheme('dark')
 		} else {
-			sessionStorage.setItem('theme', 'light')
+			window.sessionStorage.setItem('theme', 'light')
 			setTheme('light')
 		}
 	}
