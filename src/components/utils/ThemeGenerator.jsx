@@ -7,6 +7,14 @@ const ThemeGenerator = () => {
 		}
 	}
 
+	// if (window.matchMedia('(prefers-color-scheme: dark)')) {
+	// 	return 'dark'
+	// }
+	//
+	// if (window.matchMedia('(prefers-color-scheme: light)')) {
+	// 	return 'light'
+	// }
+
 	const hour = new Date().getHours()
 	if (hour > 18 || hour < 7) {
 		return 'dark'
