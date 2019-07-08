@@ -7,7 +7,7 @@ import RampDigital from './workExperience/RampDigital'
 
 const Experience = () => {
 	return (
-		<Container classes={'leading-loose'}>
+		<Container classes={'leading-loose max-w-7xl'}>
 			<IBM/>
 			<UM/>
 			<DieselLabs/>
