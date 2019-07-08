@@ -4,13 +4,13 @@ import Navbar from '../components/Navbar'
 import LandingHero from '../components/landing/LandingHero'
 import FeaturedProjects from '../components/landing/FeaturedProjects'
 import Footer from '../components/Footer'
-import TimeTheme from '../components/utils/TimeTheme'
+import ThemeGenerator from '../components/utils/ThemeGenerator'
 import { ThemeProvider } from '../components/utils/ThemeContext'
 import FontStyle from '../components/utils/FontStyle'
 import 'typeface-roboto'
 
 const IndexPage = () => {
-	const [theme] = useState(TimeTheme)
+	const [theme, setTheme] = useState(ThemeGenerator)
 	return (
 		<ThemeProvider value={theme}>
 			<div style={FontStyle} className={'bg-white'}>
@@ -24,7 +24,7 @@ const IndexPage = () => {
 						'Portfolio',
 					]}
 				/>
-				<Navbar selected="Overview"/>
+				<Navbar selected="Overview" setTheme={setTheme}/>
 				<LandingHero/>
 				<FeaturedProjects/>
 				<Footer/>

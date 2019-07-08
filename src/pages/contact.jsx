@@ -6,11 +6,11 @@ import 'typeface-roboto'
 import ContactHero from '../components/contact/ContactHero'
 import Footer from '../components/Footer'
 import { ThemeProvider } from '../components/utils/ThemeContext'
-import TimeTheme from '../components/utils/TimeTheme'
+import ThemeGenerator from '../components/utils/ThemeGenerator'
 import classNames from 'classnames'
 
 const ContactPage = () => {
-	const [theme] = useState(TimeTheme)
+	const [theme, setTheme] = useState(ThemeGenerator)
 
 	const containerClasses = classNames({
 		'h-screen': true,
@@ -25,7 +25,7 @@ const ContactPage = () => {
 					title={'Sanket Panda Contact'}
 					keywords={['Sanket Panda Contact', 'Sanket', 'Panda', 'Contact']}
 				/>
-				<Navbar selected={'Contact'}/>
+				<Navbar selected={'Contact'} setTheme={setTheme}/>
 				<ContactHero/>
 			</div>
 			<Footer/>

@@ -10,7 +10,7 @@ import FOSS from '../components/projects/FOSS'
 import Personal from '../components/projects/Personal'
 import getAllProjects from '../components/hooks/getAllProjects'
 import { ThemeProvider } from '../components/utils/ThemeContext'
-import TimeTheme from '../components/utils/TimeTheme'
+import ThemeGenerator from '../components/utils/ThemeGenerator'
 import classNames from 'classnames'
 
 const ProjectsPage = () => {
@@ -25,7 +25,7 @@ const ProjectsPage = () => {
 		umViz,
 	} = getAllProjects()
 
-	const [theme] = useState(TimeTheme)
+	const [theme, setTheme] = useState(ThemeGenerator)
 
 	const containerClasses = classNames({
 		'bg-white': theme === 'light',
@@ -39,7 +39,7 @@ const ProjectsPage = () => {
 					title="Sanket Panda Projects"
 					keywords={['Sanket Panda Projects', 'Sanket', 'Panda', 'Projects']}
 				/>
-				<Navbar selected="Projects"/>
+				<Navbar selected="Projects" setTheme={setTheme}/>
 				<Container classes="pt-24 text-3xl font-bold text-gray-500 leading-snug sm:text-4xl md:text-5xl">
 					<h1 className={'text-blue-500'}>My Projects</h1>
 				</Container>
