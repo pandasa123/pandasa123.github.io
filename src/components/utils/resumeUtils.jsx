@@ -2,17 +2,17 @@ import React, { useContext } from 'react'
 import ThemeContext from './ThemeContext'
 import classNames from 'classnames'
 
-const ParagraphEmphasis = props => {
+const ParagraphEmphasis = ({ children }) => {
 	const theme = useContext(ThemeContext)
 	const emphasisClasses = classNames({
 		'font-semibold': true,
 		'text-blue-800': theme === 'light',
 		'text-blue-600': theme === 'dark',
 	})
-	return <strong className={emphasisClasses}>{props.children}</strong>
+	return <strong className={emphasisClasses}>{children}</strong>
 }
 
-const Paragraph = props => {
+const Paragraph = ({ children }) => {
 	const theme = useContext(ThemeContext)
 	const paragraphClasses = classNames({
 		'pt-1': true,
@@ -22,10 +22,10 @@ const Paragraph = props => {
 		'text-gray-800': theme === 'light',
 		'text-gray-400': theme === 'dark',
 	})
-	return <p className={paragraphClasses}>{props.children}</p>
+	return <p className={paragraphClasses}>{children}</p>
 }
 
-const Date = props => {
+const Date = ({ children }) => {
 	const theme = useContext(ThemeContext)
 	const dateClasses = classNames({
 		'pt-1': true,
@@ -34,7 +34,7 @@ const Date = props => {
 		'text-gray-600': theme === 'light',
 		'text-gray-400': theme === 'dark',
 	})
-	return <h4 className={dateClasses}>{props.children}</h4>
+	return <h4 className={dateClasses}>{children}</h4>
 }
 
 const Position = ({ company, position }) => {
@@ -52,8 +52,8 @@ const Position = ({ company, position }) => {
 	)
 }
 
-const ParagraphContainer = props => {
-	return <div className={'py-4'}>{props.children}</div>
+const ParagraphContainer = ({ children }) => {
+	return <div className={'py-4'}>{children}</div>
 }
 
 export { Date, Paragraph, ParagraphEmphasis, ParagraphContainer, Position }

@@ -20,6 +20,7 @@ const ContactHero = () => {
 		'leading-snug': true,
 		'font-bold': true,
 		'text-gray-500': true,
+		'h-screen': true,
 		'bg-white': theme === 'light',
 		'bg-gray-800': theme === 'dark',
 	})
