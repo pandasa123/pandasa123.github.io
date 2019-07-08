@@ -14,7 +14,8 @@ const DieselLabs = () => {
 				data export API for clients using <ParagraphEmphasis>APACHE POI</ParagraphEmphasis>,{' '}
 				<ParagraphEmphasis>React</ParagraphEmphasis>, and{' '}
 				<ParagraphEmphasis>Redux</ParagraphEmphasis>. Delivered onboarding experience for
-				new clients using React and Redux
+				new clients using <ParagraphEmphasis>React</ParagraphEmphasis> and{' '}
+				<ParagraphEmphasis>Redux</ParagraphEmphasis>
 			</Paragraph>
 		</ParagraphContainer>
 	)
