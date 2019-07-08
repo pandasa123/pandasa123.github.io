@@ -1,8 +1,10 @@
 const ThemeGenerator = () => {
-	const storedTheme = sessionStorage.getItem('theme')
+	if (typeof window !== `undefined`) {
+		const storedTheme = window.sessionStorage.getItem('theme')
 
-	if (storedTheme) {
-		return storedTheme
+		if (storedTheme) {
+			return storedTheme
+		}
 	}
 
 	const hour = new Date().getHours()
