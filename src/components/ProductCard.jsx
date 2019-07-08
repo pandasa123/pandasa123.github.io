@@ -7,12 +7,12 @@ import classNames from 'classnames'
 const ProductCard = ({ title, description, image, linkTitle, link }) => {
 	const theme = useContext(ThemeContext)
 	const cardClasses = classNames({
-		'flex': true,
+		'flex ': true,
 		'flex-1': true,
 		'flex-col': true,
 		'rounded-lg': true,
 		'shadow-md': true,
-		'transition': true,
+		'transition ': true,
 		'overflow-hidden': true,
 		'bg-white': theme === 'light',
 		'bg-gray-700': theme === 'dark',
