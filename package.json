@@ -33,12 +33,11 @@
     ],
     "license": "MIT",
     "scripts": {
-        "analyze:lint": "eslint --ext .jsx --ext .js --ext .tsx --ext .ts .",
-        "analyze:prettier": "prettier --list-different 'src/**/*.{js,jsx,ts,tsx,css,md,json}'",
         "analyze": "npm run analyze:lint && npm run analyze:prettier",
         "build": "gatsby build",
         "deploy": "npm run build && npm run serve",
-        "fix:lint": "eslint --ext .jsx --ext .js --ext .tsx --ext .ts . --fix",
+        "type-check": "tsc --noEmit",
+        "lint": "tslint --project .",
         "fix:prettier": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json}",
         "fix": "npm run fix:lint && npm run fix:prettier",
         "start": "gatsby develop",
@@ -46,6 +45,8 @@
         "test": ""
     },
     "devDependencies": {
+        "@types/react": "^16.8.23",
+        "@types/react-dom": "^16.8.4",
         "babel-eslint": "10.0.2",
         "eslint": "^6.0.1",
         "eslint-config-airbnb": "^17.1.1",
@@ -55,8 +56,16 @@
         "eslint-plugin-jsx-a11y": "^6.2.3",
         "eslint-plugin-react": "^7.14.2",
         "eslint-plugin-react-hooks": "^1.6.1",
+        "gatsby-plugin-tslint": "0.0.2",
+        "gatsby-plugin-typescript": "^2.1.0",
         "prettier": "1.18.2",
-        "tailwindcss": "1.0.4"
+        "tailwindcss": "1.0.4",
+        "tslint": "^5.18.0",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-loader": "^3.5.4",
+        "tslint-plugin-prettier": "^2.0.1",
+        "tslint-react": "^4.0.0",
+        "typescript": "^3.5.3"
     },
     "publishConfig": {
         "access": "public"
