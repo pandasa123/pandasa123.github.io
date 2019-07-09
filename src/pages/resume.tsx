@@ -1,6 +1,6 @@
 import React from 'react'
-import Experience from '../components/resume/Experience'
 import Layout from '../components/Layout'
+import Experience from '../components/resume/Experience'
 import ResumeHeader from '../components/resume/ResumeHeader'
 
 const ResumePage: React.FunctionComponent = () => {

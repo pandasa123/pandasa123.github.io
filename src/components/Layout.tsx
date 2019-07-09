@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import SEO from './SEO'
-import Navbar from './Navbar'
-import ThemeGenerator from './utils/ThemeGenerator'
-import Footer from './Footer'
-import { ThemeProvider } from './utils/ThemeContext'
-import FontStyle from './utils/FontStyle'
 import 'typeface-roboto'
+import Footer from './Footer'
+import Navbar from './Navbar'
+import SEO from './SEO'
+import FontStyle from './utils/FontStyle'
+import { ThemeProvider } from './utils/ThemeContext'
+import ThemeGenerator from './utils/ThemeGenerator'
 
 interface ILayout {
 	children?: any
@@ -14,12 +14,7 @@ interface ILayout {
 	selectedPage: string
 }
 
-const Layout: React.FunctionComponent<ILayout> = ({
-													  children,
-													  title,
-													  keywords,
-													  selectedPage,
-												  }) => {
+const Layout: React.FunctionComponent<ILayout> = ({ children, title, keywords, selectedPage }) => {
 	const [theme, setTheme] = useState(ThemeGenerator)
 	return (
 		<ThemeProvider value={theme}>

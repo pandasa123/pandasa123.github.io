@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
+import classNames from 'classnames'
 import Img from 'gatsby-image'
 // @ts-ignore
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import classNames from 'classnames'
+import React, { useContext } from 'react'
 import Container from './Container'
-import ThemeContext from './utils/ThemeContext'
 import getNavigationImage from './hooks/getNavigationImage'
+import ThemeContext from './utils/ThemeContext'
 import { ThemeType } from './utils/ThemeType'
 
 interface INavbar {
@@ -84,13 +84,13 @@ const Navbar: React.FunctionComponent<INavbar> = ({ selected, setTheme }) => {
 				/>
 			</div>
 			<span className={'font-bold text-l pl-4 mt-1'}>
-				<AniLink fade to="/" className={overviewClasses}>
+				<AniLink fade={true} to="/" className={overviewClasses}>
 					Overview
 				</AniLink>
-				<AniLink fade to="/projects/" className={projectClasses}>
+				<AniLink fade={true} to="/projects/" className={projectClasses}>
 					Projects
 				</AniLink>
-				<AniLink fade to="/resume/" className={resumeClasses}>
+				<AniLink fade={true} to="/resume/" className={resumeClasses}>
 					Resume
 				</AniLink>
 			</span>

@@ -1,6 +1,6 @@
+import classNames from 'classnames'
 import React, { useContext } from 'react'
 import ThemeContext from './ThemeContext'
-import classNames from 'classnames'
 import { ThemeType } from './ThemeType'
 
 interface IUtils {
@@ -8,7 +8,7 @@ interface IUtils {
 }
 
 interface IPosition {
-	company: string,
+	company: string
 	position: string
 }
 

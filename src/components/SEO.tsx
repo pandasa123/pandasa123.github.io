@@ -1,6 +1,6 @@
+import { graphql, StaticQuery } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql, StaticQuery } from 'gatsby'
 
 const SEO = ({ keywords, title }) => {
 	return (

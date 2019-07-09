@@ -11,8 +11,8 @@ const UM: React.FunctionComponent = () => {
 				using <ParagraphEmphasis>Bootstrap</ParagraphEmphasis>,{' '}
 				<ParagraphEmphasis>D3.js</ParagraphEmphasis>, and{' '}
 				<ParagraphEmphasis>MySQL</ParagraphEmphasis>. Implemented multi-variable models
-				using <ParagraphEmphasis>LALOLib</ParagraphEmphasis>{' '}
-				and <ParagraphEmphasis>ML.js</ParagraphEmphasis>
+				using <ParagraphEmphasis>LALOLib</ParagraphEmphasis> and{' '}
+				<ParagraphEmphasis>ML.js</ParagraphEmphasis>
 			</Paragraph>
 		</ParagraphContainer>
 	)

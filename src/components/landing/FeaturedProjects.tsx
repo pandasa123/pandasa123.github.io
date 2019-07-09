@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
-import ProductCard from '../ProductCard'
-import Container from '../Container'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import getFeaturedProjectImages from '../hooks/getFeaturedProjectImages'
-import ThemeContext from '../utils/ThemeContext'
 import classNames from 'classnames'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import React, { useContext } from 'react'
+import Container from '../Container'
+import getFeaturedProjectImages from '../hooks/getFeaturedProjectImages'
+import ProductCard from '../ProductCard'
+import ThemeContext from '../utils/ThemeContext'
 import { ThemeType } from '../utils/ThemeType'
 
 const FeaturedProjects: React.FunctionComponent = () => {
@@ -18,7 +18,7 @@ const FeaturedProjects: React.FunctionComponent = () => {
 	})
 
 	const lineClasses: string = classNames({
-		'flex': true,
+		flex: true,
 		'justify-between': true,
 		'border-b-2': true,
 		'border-gray-light': theme === 'light',
@@ -37,7 +37,7 @@ const FeaturedProjects: React.FunctionComponent = () => {
 					Featured Projects
 				</h2>
 				<AniLink
-					fade
+					fade={true}
 					to="/projects/"
 					className={'font-bold text-md text-gray-500 sm:text-lg'}
 				>

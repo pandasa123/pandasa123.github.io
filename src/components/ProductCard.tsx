@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
+import classNames from 'classnames'
 import Img from 'gatsby-image'
 // @ts-ignore
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import React, { useContext } from 'react'
 import ThemeContext from './utils/ThemeContext'
-import classNames from 'classnames'
 import { ThemeType } from './utils/ThemeType'
 
 interface IProductCard {
@@ -52,7 +52,7 @@ const ProductCard: React.FunctionComponent<IProductCard> = ({
 
 	return (
 		<div className={'w-full md:w-1/2 lg:w-1/3 px-3 flex flex-col mb-8'}>
-			<AniLink fade to={link} className={cardClasses}>
+			<AniLink fade={true} to={link} className={cardClasses}>
 				<Img fluid={{ ...image }} alt={title}/>
 				<div className={'p-6 flex-1 flex flex-col justify-between'}>
 					<h3 className={cardHeaderClasses}>{title}</h3>

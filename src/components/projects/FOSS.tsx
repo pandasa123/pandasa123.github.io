@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
-import ProductCard from '../ProductCard'
-import Container from '../Container'
-import ThemeContext from '../utils/ThemeContext'
 import classNames from 'classnames'
+import React, { useContext } from 'react'
+import Container from '../Container'
+import ProductCard from '../ProductCard'
+import ThemeContext from '../utils/ThemeContext'
 import { ThemeType } from '../utils/ThemeType'
 
 interface IFOSS {
-	fabric: object,
+	fabric: object
 	reactSVG: object
 }
 

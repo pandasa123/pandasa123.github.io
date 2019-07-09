@@ -1,6 +1,6 @@
 import React from 'react'
-import LandingHero from '../components/landing/LandingHero'
 import FeaturedProjects from '../components/landing/FeaturedProjects'
+import LandingHero from '../components/landing/LandingHero'
 import Layout from '../components/Layout'
 
 const IndexPage: React.FunctionComponent = () => {

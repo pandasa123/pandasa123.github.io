@@ -1,9 +1,9 @@
 import React from 'react'
+import getAllProjects from '../components/hooks/getAllProjects'
+import Layout from '../components/Layout'
 import Commercial from '../components/projects/Commercial'
 import FOSS from '../components/projects/FOSS'
 import Personal from '../components/projects/Personal'
-import getAllProjects from '../components/hooks/getAllProjects'
-import Layout from '../components/Layout'
 import ProjectHeader from '../components/projects/ProjectHeader'
 
 const ProjectsPage: React.FunctionComponent = () => {

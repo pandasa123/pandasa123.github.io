@@ -1,7 +1,7 @@
+import classNames from 'classnames'
 import React, { useContext } from 'react'
 import Container from '../Container'
 import ThemeContext from '../utils/ThemeContext'
-import classNames from 'classnames'
 import { ThemeType } from '../utils/ThemeType'
 
 const LandingHero: React.FunctionComponent = () => {

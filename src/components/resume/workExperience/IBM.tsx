@@ -4,10 +4,7 @@ import { Date, Paragraph, ParagraphContainer, ParagraphEmphasis, Position } from
 const IBM: React.FunctionComponent = () => {
 	return (
 		<ParagraphContainer>
-			<Position
-				company={'IBM Extreme Blue'}
-				position={'Software Engineer'}
-			/>
+			<Position company={'IBM Extreme Blue'} position={'Software Engineer'}/>
 			<Date>May 2019 - August 2019</Date>
 			<Paragraph>
 				Designed and developed a modular extension architecture used to extend IBM’s
