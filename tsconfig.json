@@ -2,11 +2,18 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "esnext",
+        "lib": [
+            "dom",
+            "es2015",
+            "es2017"
+        ],
+        "jsx": "react",
+        "esModuleInterop": true,
         "sourceMap": true
     },
     "include": [
         "./src/**/*",
-        "./tailwind.config.ts"
+        "./*.ts"
     ],
     "exclude": [
         "node_modules",
