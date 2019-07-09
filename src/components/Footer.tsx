@@ -18,7 +18,11 @@ const Footer: React.FunctionComponent = () => {
 			<Container classes={'flex justify-between text-sm p-4 md:p-8'}>
 				<p className="text-white">Created by Sanket Panda</p>
 				<p>
-					<AniLink fade={true} to="/contact/" className="font-bold no-underline text-white">
+					<AniLink
+						fade={true}
+						to="/contact/"
+						className="font-bold no-underline text-white"
+					>
 						Contact Me
 					</AniLink>
 				</p>

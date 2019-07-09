@@ -10,7 +10,6 @@ import { ThemeType } from './utils/ThemeType'
 
 interface INavbar {
 	selected: string
-
 	setTheme(theme: ThemeType): any
 }
 

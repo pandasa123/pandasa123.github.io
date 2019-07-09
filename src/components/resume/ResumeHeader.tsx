@@ -18,8 +18,8 @@ const ResumeHeader: React.FunctionComponent = () => {
 		'bg-gray-800': theme === 'dark',
 	})
 
-	// const headerClasses = classNames({
-	// 	'py-2': true,
+	// const headerClasses: string = classNames({
+	// 	// 'py-2': true,
 	// 	'text-md': true,
 	// 	'sm:text-lg': true,
 	// 	'md:text-xl': true,
@@ -30,7 +30,7 @@ const ResumeHeader: React.FunctionComponent = () => {
 	return (
 		<Container classes={containerClasses}>
 			<h1 className={'text-blue-500'}>Resume</h1>
-			{/*<h2 className={headerClasses}>Where I've Worked</h2>*/}
+			{/*<a href={'https://sanket-panda-resume.s3.amazonaws.com/SanketPandaResume.pdf'} className={headerClasses}>Download full version</a>*/}
 		</Container>
 	)
 }
