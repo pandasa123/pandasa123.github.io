@@ -9,7 +9,7 @@ const ContactPage = () => {
 			title={'Sanket Panda Contact'}
 			keywords={['Sanket Panda Contact', 'Sanket', 'Panda', 'Contact']}
 		>
-			<ContactHero/>
+			<ContactHero />
 		</Layout>
 	)
 }

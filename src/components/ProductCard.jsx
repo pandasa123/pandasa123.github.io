@@ -37,7 +37,7 @@ const ProductCard = ({ title, description, image, linkTitle, link }) => {
 	return (
 		<div className={'w-full md:w-1/2 lg:w-1/3 px-3 flex flex-col mb-8'}>
 			<AniLink fade to={link} className={cardClasses}>
-				<Img fluid={{ ...image }} alt={title} objectFit="cover"/>
+				<Img fluid={{ ...image }} alt={title} objectFit="cover" />
 				<div className={'p-6 flex-1 flex flex-col justify-between'}>
 					<h3 className={cardHeaderClasses}>{title}</h3>
 					<span className={cardDescriptionClasses}>{description}</span>

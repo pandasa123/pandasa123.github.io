@@ -37,9 +37,9 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
 							.concat(
 								keywords.length > 0
 									? {
-										name: 'keywords',
-										content: keywords.join(', '),
-									}
+											name: 'keywords',
+											content: keywords.join(', '),
+									  }
 									: [],
 							)
 							.concat(meta)}
@@ -68,13 +68,13 @@ export default SEO
 
 // noinspection Annotator
 const detailsQuery = graphql`
-    query DefaultSEOQuery {
-        site {
-            siteMetadata {
-                title
-                description
-                author
-            }
-        }
-    }
+	query DefaultSEOQuery {
+		site {
+			siteMetadata {
+				title
+				description
+				author
+			}
+		}
+	}
 `

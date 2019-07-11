@@ -12,10 +12,10 @@ const Layout = ({ children, title, keywords, selectedPage }) => {
 	return (
 		<ThemeProvider value={theme}>
 			<div style={FontStyle}>
-				<SEO title={title} keywords={keywords}/>
-				<Navbar selected={selectedPage} setTheme={setTheme}/>
+				<SEO title={title} keywords={keywords} />
+				<Navbar selected={selectedPage} setTheme={setTheme} />
 				{children}
-				<Footer/>
+				<Footer />
 			</div>
 		</ThemeProvider>
 	)

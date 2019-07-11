@@ -10,8 +10,8 @@ const ResumePage = () => {
 			title="Sanket Panda Resume"
 			keywords={['Sanket Panda Resume', 'Sanket', 'Panda', 'Resume']}
 		>
-			<ResumeHeader/>
-			<Experience/>
+			<ResumeHeader />
+			<Experience />
 		</Layout>
 	)
 }

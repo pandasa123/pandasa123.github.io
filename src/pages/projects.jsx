@@ -24,10 +24,10 @@ const ProjectsPage = () => {
 			title={'Sanket Panda Projects'}
 			keywords={['Sanket Panda Projects', 'Sanket', 'Panda', 'Projects']}
 		>
-			<ProjectHeader/>
-			<Commercial hermes={hermes} dieselLabs={dieselLabs} umViz={umViz}/>
-			<FOSS fabric={fabric} reactSVG={reactSVG}/>
-			<Personal helloPAM={helloPAM} msas={msas} museumDemo={museumDemo}/>
+			<ProjectHeader />
+			<Commercial hermes={hermes} dieselLabs={dieselLabs} umViz={umViz} />
+			<FOSS fabric={fabric} reactSVG={reactSVG} />
+			<Personal helloPAM={helloPAM} msas={msas} museumDemo={museumDemo} />
 		</Layout>
 	)
 }

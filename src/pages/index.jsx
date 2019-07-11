@@ -10,8 +10,8 @@ const IndexPage = () => {
 			title={'Sanket Panda Portfolio'}
 			keywords={['Sanket Panda Portfolio', 'Sanket Panda', 'Sanket', 'Panda', 'Portfolio']}
 		>
-			<LandingHero/>
-			<FeaturedProjects/>
+			<LandingHero />
+			<FeaturedProjects />
 		</Layout>
 	)
 }
