@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import Container from './Container'
 import ThemeContext from './utils/ThemeContext'
 import getNavigationImage from './hooks/getNavigationImage'
+import { motion } from 'framer-motion'
 
 const Navbar = ({ selected, setTheme }) => {
 	const navImage = getNavigationImage()
@@ -67,14 +68,17 @@ const Navbar = ({ selected, setTheme }) => {
 
 	return (
 		<Container classes={containerClasses}>
-			<div onClick={themeChange}>
+			<motion.div 
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={themeChange}>
 				<Img
 					className={navImageClasses}
 					title="Contact Page"
 					alt="Contact Page"
 					fluid={navImage}
 				/>
-			</div>
+			</motion.div>
 			<span className={'font-bold text-l pl-4 mt-1'}>
 				<AniLink fade to="/" className={overviewClasses}>
 					Overview
