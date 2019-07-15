@@ -11,6 +11,8 @@ const Navbar = ({ selected, setTheme }) => {
 	const navImage = getNavigationImage()
 	const theme = useContext(ThemeContext)
 
+	console.log(theme)
+
 	const containerClasses = classNames({
 		'py-4': true,
 		'w-full': true,
@@ -68,10 +70,10 @@ const Navbar = ({ selected, setTheme }) => {
 
 	return (
 		<Container classes={containerClasses}>
-			<motion.div 
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={themeChange}>
+			<motion.div
+				whileHover={{ scale: 1.1 }}
+				whileTap={{ scale: 0.9 }}
+				onClick={themeChange}>
 				<Img
 					className={navImageClasses}
 					title="Contact Page"
