@@ -52,8 +52,24 @@ const Position = ({ company, position }) => {
 	)
 }
 
+const SkillsTitle = ({ category, skills }) => {
+	const theme = useContext(ThemeContext)
+	const positionClasses = classNames({
+		'text-lg': true,
+		'md:text-xl': true,
+		'text-gray-500': theme === 'light',
+		'text-gray-400': theme === 'dark',
+	})
+	return (
+		<h3 className={positionClasses}>
+			<strong className={'text-blue-500'}>{category}</strong>: {skills}
+		</h3>
+	)
+}
+
+
 const ParagraphContainer = ({ children }) => {
 	return <div className={'py-4'}>{children}</div>
 }
 
-export { Date, Paragraph, ParagraphEmphasis, ParagraphContainer, Position }
+export { Date, Paragraph, ParagraphEmphasis, ParagraphContainer, Position, SkillsTitle }
