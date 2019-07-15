@@ -36,7 +36,7 @@ const Personal = ({ helloPAM, museumDemo, msas, primeCanvas, alexaVowelTrainer }
 					}
 					image={helloPAM}
 					linkTitle={'Learn More'}
-					link="/"
+					link={'https://github.com/pandasa123/Hello_PAM'}
 				/>
 				<ProductCard
 					title={'Visitor Video Demographics'}
@@ -45,7 +45,7 @@ const Personal = ({ helloPAM, museumDemo, msas, primeCanvas, alexaVowelTrainer }
 					}
 					image={museumDemo}
 					linkTitle={'Learn More'}
-					link="/"
+					link={'https://github.com/pandasa123/VisitorDemographicsIPCamera'}
 				/>
 				<ProductCard
 					title={'Women’s Field Hockey Viz'}
@@ -54,7 +54,6 @@ const Personal = ({ helloPAM, museumDemo, msas, primeCanvas, alexaVowelTrainer }
 					}
 					image={msas}
 					linkTitle={'Learn More'}
-					link="/"
 				/>
 				<ProductCard
 					title={'Prime Canvas'}
@@ -63,7 +62,7 @@ const Personal = ({ helloPAM, museumDemo, msas, primeCanvas, alexaVowelTrainer }
 					}
 					image={primeCanvas}
 					linkTitle={'Learn More'}
-					link="/"
+					link={'https://github.com/pandasa123/primeCanvas'}
 				/>
 				<ProductCard
 					title={'Alexa Kids Vowel Trainer'}
@@ -72,7 +71,7 @@ const Personal = ({ helloPAM, museumDemo, msas, primeCanvas, alexaVowelTrainer }
 					}
 					image={alexaVowelTrainer}
 					linkTitle={'Learn More'}
-					link="/"
+					link={'https://github.com/pandasa123/AlexaVowelTraining'}
 				/>
 			</Container>
 		</div>

@@ -36,7 +36,7 @@ const FOSS = ({ fabric, reactSVG }) => {
 					}
 					image={fabric}
 					linkTitle={'Learn More'}
-					link="/"
+					link={'https://github.com/OfficeDev/office-ui-fabric-react'}
 				/>
 				<ProductCard
 					title={'React SVG-Loader Library'}
@@ -45,7 +45,7 @@ const FOSS = ({ fabric, reactSVG }) => {
 					}
 					image={reactSVG}
 					linkTitle={'Learn More'}
-					link="/"
+					link={'https://github.com/ajwann/svg-loaders-react'}
 				/>
 			</Container>
 		</div>

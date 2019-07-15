@@ -36,7 +36,7 @@ const Commercial = ({ hermes, dieselLabs, umViz }) => {
 					}
 					image={hermes}
 					linkTitle={'Learn More'}
-					link="/"
+					link={'https://chrome.google.com/webstore/detail/ibm-hermes-extension-for/ghfjogdlhhcifddofiocfahldihfkikg'}
 				/>
 				<ProductCard
 					title={'Diesel Labs T-SNE Viz'}
@@ -45,7 +45,7 @@ const Commercial = ({ hermes, dieselLabs, umViz }) => {
 					}
 					image={dieselLabs}
 					linkTitle={'Learn More'}
-					link="/"
+					// link="/"
 				/>
 				<ProductCard
 					title={'UM Center for Ergonomics Viz'}
@@ -54,7 +54,7 @@ const Commercial = ({ hermes, dieselLabs, umViz }) => {
 					}
 					image={umViz}
 					linkTitle={'Learn More'}
-					link="/"
+					// link="/"
 				/>
 			</Container>
 		</div>

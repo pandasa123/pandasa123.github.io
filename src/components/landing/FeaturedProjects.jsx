@@ -51,7 +51,7 @@ const FeaturedProjects = () => {
 					}
 					image={hermes}
 					linkTitle={'Learn More'}
-					link="/"
+					link={'https://chrome.google.com/webstore/detail/ibm-hermes-extension-for/ghfjogdlhhcifddofiocfahldihfkikg'}
 				/>
 				<ProductCard
 					title={'Diesel Labs T-SNE Viz'}
@@ -60,7 +60,7 @@ const FeaturedProjects = () => {
 					}
 					image={dieselLabs}
 					linkTitle={'Learn More'}
-					link="/"
+					// link="/"
 				/>
 				<ProductCard
 					title={'Microsoft Fabric UI React'}
@@ -69,7 +69,7 @@ const FeaturedProjects = () => {
 					}
 					image={fabric}
 					linkTitle={'Learn More'}
-					link="/"
+					link={'https://github.com/OfficeDev/office-ui-fabric-react'}
 				/>
 			</div>
 		</Container>
