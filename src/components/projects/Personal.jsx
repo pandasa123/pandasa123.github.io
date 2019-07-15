@@ -4,7 +4,7 @@ import Container from '../Container'
 import ThemeContext from '../utils/ThemeContext'
 import classNames from 'classnames'
 
-const Personal = ({ helloPAM, museumDemo, msas }) => {
+const Personal = ({ helloPAM, museumDemo, msas, primeCanvas, alexaVowelTrainer }) => {
 	const theme = useContext(ThemeContext)
 
 	const containerClasses = classNames({
@@ -53,6 +53,24 @@ const Personal = ({ helloPAM, museumDemo, msas }) => {
 						'Winner of Michigan Sports Analytics Hackathon, this visualisation allowed field hockey coaches to understand player performance over a season 🏆'
 					}
 					image={msas}
+					linkTitle={'Learn More'}
+					link="/"
+				/>
+				<ProductCard
+					title={'Prime Canvas'}
+					description={
+						'Beautifully simple prime number visualisation using dynamic programming and efficient canvas drawing'
+					}
+					image={primeCanvas}
+					linkTitle={'Learn More'}
+					link="/"
+				/>
+				<ProductCard
+					title={'Alexa Kids Vowel Trainer'}
+					description={
+						'Using Abstract Relational Concepts and Levenshtein distance algorithm, Word Trainer teaches children how to identify vowels and consonants through the juxtaposition of two words'
+					}
+					image={alexaVowelTrainer}
 					linkTitle={'Learn More'}
 					link="/"
 				/>

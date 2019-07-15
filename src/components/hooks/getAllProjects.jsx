@@ -60,6 +60,20 @@ const getAllProjects = () => {
                     }
                 }
             }
+            primeCanvas: file(relativePath: { eq: "ProductPages/PrimeCanvas.png" }) {
+                childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            alexaVowelTrainer: file(relativePath: { eq: "ProductPages/AlexaVowelTrainer.png" }) {
+                childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
         }
 	`)
 
@@ -72,6 +86,8 @@ const getAllProjects = () => {
 		museumDemo: images.museumDemo.childImageSharp.fluid,
 		reactSVG: images.reactSVG.childImageSharp.fluid,
 		umViz: images.umViz.childImageSharp.fluid,
+		primeCanvas: images.primeCanvas.childImageSharp.fluid,
+        alexaVowelTrainer: images.alexaVowelTrainer.childImageSharp.fluid,
 	}
 }
 
