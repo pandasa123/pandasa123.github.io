@@ -1,7 +1,6 @@
-.next/
+.vscode/
 .idea/
 .DS_Store
 node_modules/
-bundles/
-docs/
-styles/*.css
+public/
+.cache/
