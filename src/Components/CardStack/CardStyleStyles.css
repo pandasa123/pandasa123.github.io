@@ -1,0 +1,26 @@
+#card_stack_container {
+  margin-top: -4%;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+}
+
+.card_container {
+  position: absolute;
+  width: 100vw;
+  height: 70vh;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_item {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 75%;
+  height: 75%;
+  will-change: transform;
+  border-radius: 10px;
+}
