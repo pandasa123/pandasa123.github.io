@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './HeaderStyles.module.css'
 
 const Header = () => {
 	return (
 		<div id={styles.header}>
-			<h1 id={styles.page_title}>
-				<span className={styles.underline_magical}>Hi, I'm Sanket Panda!</span>
+			<h1 id={styles.title}>
+				<span className={styles.underline}>Hi, I'm Sanket Panda!</span>
 				{'  '}
 				<a href={'http://linkedin.com/in/sanketpanda'}>
 					<svg
@@ -36,4 +36,4 @@ const Header = () => {
 	)
 }
 
-export default Header
+export default memo(Header)

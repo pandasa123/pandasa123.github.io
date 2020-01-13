@@ -10,7 +10,7 @@
   }
 }
 
-#page_title {
+#title {
   padding-top: 16px;
   color: white;
   font-size: 2.5rem;
@@ -21,7 +21,7 @@
   overflow-wrap: break-word;
 }
 
-.underline_magical {
+.underline {
   background-image: linear-gradient(to right, #667EEA 0%, #7F9CF5 51%);
   background-repeat: no-repeat;
   background-size: 100% 0.25em;
@@ -29,6 +29,6 @@
   transition: background-size 0.25s ease-in;
 }
 
-.underline_magical:hover {
+.underline:hover {
   background-size: 100% 88%;
 }

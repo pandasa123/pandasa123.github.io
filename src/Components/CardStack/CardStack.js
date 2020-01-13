@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, memo } from 'react'
 import { useSprings, animated, interpolate } from 'react-spring'
 import { useGesture } from 'react-use-gesture'
 import styles from './CardStackStyles.module.css'
@@ -66,7 +66,7 @@ const CardStack = () => {
 	)
 	// Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
 	return (
-		<div id={styles.card_stack_container}>
+		<div id={styles.stack_container}>
 			{props.map(({ x, y, rot, scale }, i) => (
 				<animated.div
 					key={i}
@@ -93,4 +93,4 @@ const CardStack = () => {
 	)
 }
 
-export default CardStack
+export default memo(CardStack)

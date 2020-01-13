@@ -1,15 +1,15 @@
-footer {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer_svg {
+.svg {
   background-color: #7F9CF5;
   opacity: 0.6;
   margin-right: 8px;
 }
 
-.footer_svg:hover {
+.svg:hover {
   opacity: 1.0;
 }

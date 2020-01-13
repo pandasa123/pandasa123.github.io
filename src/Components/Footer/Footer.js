@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styles from './FooterStyles.module.css'
 
 const Footer = () => {
 	return (
-		<footer>
+		<footer className={styles.container}>
 			<a href={'http://linkedin.com/in/sanketpanda'}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +13,7 @@ const Footer = () => {
 					width="24px"
 					height="24px"
 					viewBox="0 0 430.117 430.117"
-					className={styles.footer_svg}
+					className={styles.svg}
 					style={{
 						borderRadius: 4,
 						padding: 4
@@ -35,7 +35,7 @@ const Footer = () => {
 					width="24px"
 					height="24px"
 					viewBox="0 0 24 24"
-					className={styles.footer_svg}
+					className={styles.svg}
 					style={{
 						borderRadius: '100%'
 					}}
@@ -50,4 +50,4 @@ const Footer = () => {
 	)
 }
 
-export default Footer
+export default memo(Footer)
