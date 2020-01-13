@@ -31,6 +31,8 @@
 
 #card_stack_container {
   margin-top: -64%;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 350px) {
