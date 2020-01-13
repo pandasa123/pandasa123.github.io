@@ -5,6 +5,9 @@ import styles from './CardStackStyles.module.css'
 
 const cards = [
 	'https://sanket-portfolio.s3.amazonaws.com/Diesel.svg',
+	'https://sanket-portfolio.s3.amazonaws.com/Michigan+Research.svg',
+	'https://sanket-portfolio.s3.amazonaws.com/Extreme+Blue.svg',
+	'https://sanket-portfolio.s3.amazonaws.com/Graduation+Card.svg',
 	'https://sanket-portfolio.s3.amazonaws.com/IBM_OM.svg'
 ]
 
