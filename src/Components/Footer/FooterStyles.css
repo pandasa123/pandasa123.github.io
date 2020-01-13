@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_svg {
+  background-color: #7F9CF5;
+  opacity: 0.6;
+  margin-right: 8px;
+}
+
+.footer_svg:hover {
+  opacity: 1.0;
+}

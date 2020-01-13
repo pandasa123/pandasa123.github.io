@@ -4,7 +4,7 @@ import './HeaderStyles.css'
 const Header = () => {
 	return (
 		<div id="header">
-			<h1 className="page_title">
+			<h1 id="page_title">
 				<span className="underline--magical">Hi, I'm Sanket Panda!</span>
 				{'  '}
 				<a href={'http://linkedin.com/in/sanketpanda'}>
