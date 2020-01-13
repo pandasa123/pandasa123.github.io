@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useSprings, animated, interpolate } from 'react-spring'
 import { useGesture } from 'react-use-gesture'
-import './cardStackStyles.css'
+import './CardStackStyles.css'
 
 const cards = [
 	'https://sanket-portfolio.s3.amazonaws.com/Diesel.svg',
@@ -22,7 +22,7 @@ const trans = (r, s) =>
 	`perspective(1500px) rotateX(0deg) rotateY(${r /
 		10}deg) rotateZ(${r}deg) scale(${s})`
 
-function CardStack() {
+const CardStack = () => {
 	const [gone] = useState(() => new Set()) // The set flags all the cards that are flicked out
 	const [props, set] = useSprings(cards.length, i => ({
 		...to(i),
@@ -60,25 +60,32 @@ function CardStack() {
 		}
 	)
 	// Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
-	return props.map(({ x, y, rot, scale }, i) => (
-		<animated.div
-			key={i}
-			style={{
-				transform: interpolate([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`)
-			}}
-			className="card_container"
-		>
-			{/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
-			<animated.div
-				{...bind(i)}
-				style={{
-					transform: interpolate([rot, scale], trans),
-					backgroundImage: `url(${cards[i]})`
-				}}
-				className="card_item"
-			/>
-		</animated.div>
-	))
+	return (
+		<div id="card_stack_container">
+			{props.map(({ x, y, rot, scale }, i) => (
+				<animated.div
+					key={i}
+					style={{
+						transform: interpolate(
+							[x, y],
+							(x, y) => `translate3d(${x}px,${y}px,0)`
+						)
+					}}
+					className="card_container"
+				>
+					{/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
+					<animated.div
+						{...bind(i)}
+						style={{
+							transform: interpolate([rot, scale], trans),
+							backgroundImage: `url(${cards[i]})`
+						}}
+						className="card_item"
+					/>
+				</animated.div>
+			))}
+		</div>
+	)
 }
 
 export default CardStack

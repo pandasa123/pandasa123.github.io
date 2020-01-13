@@ -1,3 +1,10 @@
+#card_stack_container {
+  margin-top: -4%;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+}
+
 .card_container {
   position: absolute;
   width: 100vw;
