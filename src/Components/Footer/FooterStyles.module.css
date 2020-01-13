@@ -6,10 +6,24 @@
 
 .svg {
   background-color: #7F9CF5;
-  opacity: 0.6;
-  margin-right: 8px;
+  opacity: 0.4;
+  margin-right: 16px;
 }
 
 .svg:hover {
   opacity: 1.0;
+  transition: opacity 0.2s ease-in;
+}
+
+.svg_opacity {
+  opacity: 0.4;
+  margin-right: 16px;
+  background-color: #7F9CF5;
+  border-radius: 100%;
+  padding: 3px;
+}
+
+.svg_opacity:hover {
+  opacity: 1.0;
+  transition: opacity 0.2s ease-in;
 }
