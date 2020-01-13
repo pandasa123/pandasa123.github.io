@@ -9,6 +9,10 @@
   color: white;
   font-size: 2.5rem;
   line-height: 1.2;
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  overflow-wrap: break-word;
   /* box-shadow: inset 0 -5px 0 rgba(255, 74, 110, .5); */
 }
 
@@ -37,12 +41,12 @@
 
 @media only screen and (max-width: 400px) {
   #card_stack_container {
-    margin-top: -20%;
+    margin-top: -24%;
   }
 }
 
 @media only screen and (max-width: 300px) {
   #card_stack_container {
-    margin-top: -28%;
+    margin-top: -48%;
   }
 }

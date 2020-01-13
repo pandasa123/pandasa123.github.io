@@ -7,7 +7,7 @@ const App = () => {
 		<>
 			<div id="header">
 				<h1 className="page_title">
-					<span className="underline--magical">Hi, I'm Sanket Panda</span>
+					<span className="underline--magical">Hi, I'm Sanket Panda!</span>
 				</h1>
 			</div>
 			<div id="card_stack_container">
