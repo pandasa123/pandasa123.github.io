@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useSprings, animated, interpolate } from 'react-spring'
 import { useGesture } from 'react-use-gesture'
-import './CardStackStyles.css'
+import styles from './CardStackStyles.module.css'
 
 const cards = [
 	'https://sanket-portfolio.s3.amazonaws.com/Diesel.svg',
@@ -66,7 +66,7 @@ const CardStack = () => {
 	)
 	// Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
 	return (
-		<div id="card_stack_container">
+		<div id={styles.card_stack_container}>
 			{props.map(({ x, y, rot, scale }, i) => (
 				<animated.div
 					key={i}
@@ -76,7 +76,7 @@ const CardStack = () => {
 							(x, y) => `translate3d(${x}px,${y}px,0)`
 						)
 					}}
-					className="card_container"
+					className={styles.card_container}
 				>
 					{/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
 					<animated.div
@@ -85,7 +85,7 @@ const CardStack = () => {
 							transform: interpolate([rot, scale], trans),
 							backgroundImage: `url(${cards[i]})`
 						}}
-						className="card_item"
+						className={styles.card_item}
 					/>
 				</animated.div>
 			))}

@@ -1,11 +1,11 @@
 import React from 'react'
-import './HeaderStyles.css'
+import styles from './HeaderStyles.module.css'
 
 const Header = () => {
 	return (
-		<div id="header">
-			<h1 id="page_title">
-				<span className="underline--magical">Hi, I'm Sanket Panda!</span>
+		<div id={styles.header}>
+			<h1 id={styles.page_title}>
+				<span className={styles.underline_magical}>Hi, I'm Sanket Panda!</span>
 				{'  '}
 				<a href={'http://linkedin.com/in/sanketpanda'}>
 					<svg

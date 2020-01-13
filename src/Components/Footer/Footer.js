@@ -1,5 +1,5 @@
 import React from 'react'
-import './FooterStyles.css'
+import styles from './FooterStyles.module.css'
 
 const Footer = () => {
 	return (
@@ -13,7 +13,7 @@ const Footer = () => {
 					width="24px"
 					height="24px"
 					viewBox="0 0 430.117 430.117"
-					className="footer_svg"
+					className={styles.footer_svg}
 					style={{
 						borderRadius: 4,
 						padding: 4
@@ -35,7 +35,7 @@ const Footer = () => {
 					width="24px"
 					height="24px"
 					viewBox="0 0 24 24"
-					className="footer_svg"
+					className={styles.footer_svg}
 					style={{
 						borderRadius: '100%'
 					}}
