@@ -13,7 +13,9 @@
     "react-spring": "9.0.0-beta.3",
     "react-use-gesture": "5.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-jest": "^24.9.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
