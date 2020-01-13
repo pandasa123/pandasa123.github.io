@@ -30,12 +30,12 @@
 }
 
 #card_stack_container {
-  margin-top: -64%;
+  /* margin-top: -64%; */
   display: flex;
   justify-content: center;
 }
 
-@media only screen and (min-width: 350px) {
+/* @media only screen and (min-width: 350px) {
   #card_stack_container {
     margin-top: -42%;
   }
@@ -81,27 +81,4 @@
   #card_stack_container {
     margin-top: -2%;
   }
-}
-
-/* #card_stack_container {
-  margin-top: -4%;
-}
-
-@media only screen and (max-width: 500px) {
-  #card_stack_container {
-    margin-top: -12%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #card_stack_container {
-    margin-top: -32%;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  #card_stack_container {
-    margin-top: -48%;
-  }
-
 } */
