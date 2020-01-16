@@ -11,6 +11,14 @@ const cards = [
 	'https://sanket-portfolio.s3.amazonaws.com/IBM_OM.svg'
 ]
 
+const Titles = [
+	'Diesel Labs Software Engineer',
+	'University of Michigan Michigan Research',
+	'IBM Extreme Blue Software Engineer',
+	'University of Michigan Computer Science Engineering',
+	'IBM Associate Offering Manager'
+]
+
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = i => ({
 	x: 0,
@@ -89,6 +97,7 @@ const CardStack = () => {
 							backgroundImage: `url(${cards[i]})`
 						}}
 						className={styles.card_item}
+						title={Titles[i]}
 					/>
 				</animated.div>
 			))}

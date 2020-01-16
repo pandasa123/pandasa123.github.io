@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  /* margin: 0; */
   background: #637381;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,22 +8,4 @@ body {
 
 * {
   box-sizing: border-box;
-}
-
-html, body {
-  overscroll-behavior-y: contain;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  user-select: none;
-  position: fixed;
-  overflow: hidden;
-}
-
-#root {
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
 }

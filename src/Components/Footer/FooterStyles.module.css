@@ -20,8 +20,8 @@
   opacity: 0.4;
   margin-right: 16px;
   background-color: #7F9CF5;
-  border-radius: 100%;
-  padding: 3px;
+  border-radius: 25%;
+  padding: 2px;
 }
 
 .svg_opacity:hover {
