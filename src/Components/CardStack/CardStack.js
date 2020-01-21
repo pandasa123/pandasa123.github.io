@@ -4,11 +4,11 @@ import { useGesture } from 'react-use-gesture'
 import styles from './CardStackStyles.module.css'
 
 const cards = [
-	'https://sanket-portfolio.s3.amazonaws.com/Diesel.svg',
-	'https://sanket-portfolio.s3.amazonaws.com/Michigan+Research.svg',
-	'https://sanket-portfolio.s3.amazonaws.com/Extreme+Blue.svg',
-	'https://sanket-portfolio.s3.amazonaws.com/Graduation+Card.svg',
-	'https://sanket-portfolio.s3.amazonaws.com/IBM_OM.svg'
+	'http://d2v3uy2v3fjol5.cloudfront.net/Diesel.svg',
+	'http://d2v3uy2v3fjol5.cloudfront.net/Michigan+Research.svg',
+	'http://d2v3uy2v3fjol5.cloudfront.net/Extreme+Blue.svg',
+	'http://d2v3uy2v3fjol5.cloudfront.net/Graduation+Card.svg',
+	'http://d2v3uy2v3fjol5.cloudfront.net/IBM_OM.svg'
 ]
 
 const Titles = [
